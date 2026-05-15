@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand */
+  --color-primary:       #00C4B4;
+  --color-primary-dark:  #009D90;
+  --color-primary-light: #33D4C6;
+  --color-secondary:     #1E3A8A;
+  --color-accent:        #6366F1;
+
+  /* Neutrals */
+  --color-bg:            #FFFFFF;
+  --color-bg-alt:        #F8FAFC;
+  --color-bg-dark:       #0A0E1A;
+  --color-muted:         #64748B;
+  --color-border:        #E2E8F0;
+  --color-dark:          #0F172A;
+
+  /* Typography */
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* Radius */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   20px;
+  --radius-full: 9999px;
+}
+
+/* ── Design tokens as CSS vars ── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,0.16);
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+img, video { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ── Fluid type ── */
+:root {
+  --text-xs:  clamp(0.7rem, 1vw, 0.75rem);
+  --text-sm:  clamp(0.8rem, 1.2vw, 0.875rem);
+  --text-lg:  clamp(1rem, 2vw, 1.125rem);
+  --text-xl:  clamp(1.1rem, 2.5vw, 1.25rem);
+  --text-2xl: clamp(1.25rem, 3vw, 1.5rem);
+  --text-3xl: clamp(1.5rem, 4vw, 2rem);
+  --text-4xl: clamp(1.8rem, 5vw, 2.5rem);
+  --text-5xl: clamp(2rem, 6vw, 3.5rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Utilities ── */
+.gradient-text {
+  background: linear-gradient(135deg, #00C4B4, #6366F1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.gradient-bg {
+  background: linear-gradient(135deg, #009D90 0%, #6366F1 100%);
+}
+
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ── Animations ── */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-fade-up { animation: fadeInUp 0.6s ease both; }
+.animate-float   { animation: float 4s ease-in-out infinite; }
+.animate-marquee { animation: marquee 30s linear infinite; }
+.spinner         { animation: spin 0.8s linear infinite; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #00C4B4; border-radius: 99px; }
+
+/* ── Card hover ── */
+.card-hover {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
