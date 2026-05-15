@@ -47,7 +47,7 @@ export default function PortfolioPage() {
         <div className="flex flex-wrap gap-2 mb-10 justify-center">
           {CATEGORIES.map((cat) => (
             <span key={cat}
-              className={`px-5 py-2 rounded-full text-sm font-medium cursor-pointer transition-all border ${cat === 'All' ? 'bg-[#00C4B4] text-white border-[#00C4B4]' : 'border-slate-200 text-slate-600 hover:border-[#00C4B4] hover:text-[#00C4B4]'}`}>
+              className={`px-5 py-2 rounded-full text-sm font-medium cursor-pointer transition-all border ${cat === 'All' ? 'bg-[#F59E0B] text-white border-[#F59E0B]' : 'border-slate-200 text-slate-600 hover:border-[#F59E0B] hover:text-[#F59E0B]'}`}>
               {cat}
             </span>
           ))}
@@ -62,7 +62,7 @@ export default function PortfolioPage() {
               <div className="p-4">
                 <div className="flex items-center justify-between mb-1">
                   <h3 className="font-bold text-[#0F172A] text-sm">{item.name}</h3>
-                  <span className="text-xs text-[#00C4B4] font-medium">{item.cat}</span>
+                  <span className="text-xs text-[#F59E0B] font-medium">{item.cat}</span>
                 </div>
                 <span className="text-xs text-slate-400 mb-1 block">{item.tag}</span>
                 <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
@@ -73,7 +73,7 @@ export default function PortfolioPage() {
 
         <div className="text-center mt-12">
           <p className="text-slate-500 text-sm mb-4">Showing 12 of 1,500+ projects</p>
-          <button className="px-8 py-3 border-2 border-[#00C4B4] text-[#00C4B4] font-semibold rounded-full hover:bg-[#00C4B4] hover:text-white transition-all">
+          <button className="px-8 py-3 border-2 border-[#F59E0B] text-[#F59E0B] font-semibold rounded-full hover:bg-[#F59E0B] hover:text-white transition-all">
             Load More Projects
           </button>
         </div>

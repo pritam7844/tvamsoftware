@@ -86,13 +86,13 @@ export default function ResourcesPage() {
                 <span className="px-3 py-1 text-xs font-bold bg-white/20 text-white rounded-full">{f.tag}</span>
               </div>
               <div className="p-5">
-                <h3 className="font-bold text-[#0F172A] text-sm leading-snug mb-2 group-hover:text-[#00C4B4] transition-colors">
+                <h3 className="font-bold text-[#0F172A] text-sm leading-snug mb-2 group-hover:text-[#F59E0B] transition-colors">
                   {f.title}
                 </h3>
                 <p className="text-xs text-slate-500 leading-relaxed mb-4">{f.desc}</p>
                 <div className="flex items-center justify-between text-xs text-slate-400">
                   <span>{f.date} · {f.readTime}</span>
-                  <span className="text-[#00C4B4] flex items-center gap-1 font-semibold group-hover:gap-2 transition-all">
+                  <span className="text-[#F59E0B] flex items-center gap-1 font-semibold group-hover:gap-2 transition-all">
                     Read <ArrowRight size={12} />
                   </span>
                 </div>
@@ -112,15 +112,15 @@ export default function ResourcesPage() {
               {BLOGS.map((b) => (
                 <div key={b.title}
                   className="group flex items-start gap-4 bg-white rounded-2xl p-5 border border-slate-200 card-hover cursor-pointer">
-                  <div className="w-2 h-2 rounded-full bg-[#00C4B4] mt-2 shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-[#F59E0B] mt-2 shrink-0" />
                   <div className="flex-1">
-                    <span className="text-xs text-[#00C4B4] font-semibold uppercase tracking-wide">{b.tag}</span>
-                    <h3 className="text-sm font-bold text-[#0F172A] mt-1 group-hover:text-[#00C4B4] transition-colors leading-snug">
+                    <span className="text-xs text-[#F59E0B] font-semibold uppercase tracking-wide">{b.tag}</span>
+                    <h3 className="text-sm font-bold text-[#0F172A] mt-1 group-hover:text-[#F59E0B] transition-colors leading-snug">
                       {b.title}
                     </h3>
                     <p className="text-xs text-slate-400 mt-1">{b.date} · {b.readTime} read</p>
                   </div>
-                  <ArrowRight size={16} className="text-slate-300 group-hover:text-[#00C4B4] transition-colors shrink-0 mt-1" />
+                  <ArrowRight size={16} className="text-slate-300 group-hover:text-[#F59E0B] transition-colors shrink-0 mt-1" />
                 </div>
               ))}
             </div>
@@ -133,9 +133,9 @@ export default function ResourcesPage() {
               {GUIDES.map((g) => (
                 <div key={g.title}
                   className="group bg-white rounded-2xl p-5 border border-slate-200 card-hover cursor-pointer">
-                  <h3 className="text-sm font-bold text-[#0F172A] group-hover:text-[#00C4B4] transition-colors mb-1">{g.title}</h3>
+                  <h3 className="text-sm font-bold text-[#0F172A] group-hover:text-[#F59E0B] transition-colors mb-1">{g.title}</h3>
                   <p className="text-xs text-slate-500">{g.desc}</p>
-                  <span className="inline-flex items-center gap-1 text-xs text-[#00C4B4] font-semibold mt-3 group-hover:gap-2 transition-all">
+                  <span className="inline-flex items-center gap-1 text-xs text-[#F59E0B] font-semibold mt-3 group-hover:gap-2 transition-all">
                     Read Guide <ArrowRight size={10} />
                   </span>
                 </div>

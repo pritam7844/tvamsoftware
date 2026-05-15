@@ -116,16 +116,16 @@ export default function CareerPage() {
             Current Openings
           </h2>
           <p className="mt-4 text-slate-500">
-            Don&apos;t see your role? <a href="mailto:hr@tvamsoftware.com" className="text-[#00C4B4] font-medium hover:underline">Send us your CV anyway.</a>
+            Don&apos;t see your role? <a href="mailto:hr@tvamsoftware.com" className="text-[#F59E0B] font-medium hover:underline">Send us your CV anyway.</a>
           </p>
         </div>
 
         <div className="space-y-3">
           {OPENINGS.map((job) => (
             <div key={job.title}
-              className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white border border-slate-200 rounded-2xl p-5 hover:border-[#00C4B4]/40 hover:shadow-md transition-all cursor-pointer">
+              className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white border border-slate-200 rounded-2xl p-5 hover:border-[#F59E0B]/40 hover:shadow-md transition-all cursor-pointer">
               <div>
-                <h3 className="font-bold text-[#0F172A] group-hover:text-[#00C4B4] transition-colors">{job.title}</h3>
+                <h3 className="font-bold text-[#0F172A] group-hover:text-[#F59E0B] transition-colors">{job.title}</h3>
                 <div className="flex flex-wrap gap-3 mt-2 text-xs text-slate-500">
                   <span className="flex items-center gap-1"><Briefcase size={12} /> {job.dept}</span>
                   <span className="flex items-center gap-1"><Clock size={12} /> {job.exp}</span>
@@ -133,8 +133,8 @@ export default function CareerPage() {
                 </div>
               </div>
               <div className="flex items-center gap-3 shrink-0">
-                <span className="px-3 py-1 text-xs bg-[#00C4B4]/10 text-[#00C4B4] rounded-full font-medium">{job.type}</span>
-                <span className="text-[#00C4B4] flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all">
+                <span className="px-3 py-1 text-xs bg-[#F59E0B]/10 text-[#F59E0B] rounded-full font-medium">{job.type}</span>
+                <span className="text-[#F59E0B] flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all">
                   Apply <ArrowRight size={14} />
                 </span>
               </div>

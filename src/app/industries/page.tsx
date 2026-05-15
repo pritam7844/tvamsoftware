@@ -143,7 +143,7 @@ export default function IndustriesPage() {
                     <span key={app} className="px-2 py-1 text-xs bg-slate-100 text-slate-600 rounded-full">{app}</span>
                   ))}
                 </div>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#00C4B4] group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#F59E0B] group-hover:gap-2 transition-all">
                   Explore Solutions <ArrowRight size={14} />
                 </span>
               </div>

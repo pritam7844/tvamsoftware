@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-xl font-black tracking-tight text-[#0F172A]">
-              tech<span className="text-[#00C4B4]">hugo</span>
+              Tvam <span className="text-[#F59E0B]">Software</span>
             </span>
           </Link>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
                       <div className="grid grid-cols-3 gap-0.5">
                         {SERVICES.map((s) => (
                           <Link key={s.label} href={s.href}
-                            className="px-3 py-2 text-sm text-slate-700 hover:text-[#00C4B4] hover:bg-[#00C4B4]/5 rounded-lg transition-colors font-medium">
+                            className="px-3 py-2 text-sm text-slate-700 hover:text-[#F59E0B] hover:bg-[#F59E0B]/5 rounded-lg transition-colors font-medium">
                             {s.label}
                           </Link>
                         ))}
@@ -72,7 +72,7 @@ export default function Navbar() {
                       <div className="grid grid-cols-2 gap-0.5">
                         {INDUSTRIES.map((ind) => (
                           <Link key={ind.label} href={ind.href}
-                            className="px-3 py-2 text-sm text-slate-700 hover:text-[#00C4B4] hover:bg-[#00C4B4]/5 rounded-lg transition-colors font-medium">
+                            className="px-3 py-2 text-sm text-slate-700 hover:text-[#F59E0B] hover:bg-[#F59E0B]/5 rounded-lg transition-colors font-medium">
                             {ind.label}
                           </Link>
                         ))}
@@ -89,14 +89,14 @@ export default function Navbar() {
                         {CASE_STUDIES_NAV.map((cs) => (
                           <Link key={cs.label} href={cs.href}
                             className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-slate-50 transition-colors group">
-                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00C4B4]/15 to-[#6366F1]/15 flex items-center justify-center text-[#00C4B4] text-xs font-extrabold shrink-0">
+                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F59E0B]/15 to-[#F59E0B]/15 flex items-center justify-center text-[#F59E0B] text-xs font-extrabold shrink-0">
                               {cs.label[0]}
                             </div>
                             <div>
                               <p className="text-sm font-semibold text-[#0F172A] leading-none">{cs.label}</p>
                               <p className="text-xs text-slate-400 mt-0.5">{cs.sub}</p>
                             </div>
-                            <ArrowRight size={13} className="ml-auto text-slate-300 group-hover:text-[#00C4B4] group-hover:translate-x-0.5 transition-all" />
+                            <ArrowRight size={13} className="ml-auto text-slate-300 group-hover:text-[#F59E0B] group-hover:translate-x-0.5 transition-all" />
                           </Link>
                         ))}
                       </div>
@@ -114,12 +114,12 @@ export default function Navbar() {
               <MessageCircle size={18} />
             </a>
             <a href="tel:+918898489138" aria-label="Call"
-              className="p-2 rounded-lg text-slate-400 hover:text-[#00C4B4] hover:bg-slate-100 transition-colors">
+              className="p-2 rounded-lg text-slate-400 hover:text-[#F59E0B] hover:bg-slate-100 transition-colors">
               <Phone size={18} />
             </a>
             <div className="w-px h-5 bg-slate-200 mx-1" />
             <Link href="/contact"
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#00C4B4] text-white text-sm font-semibold rounded-full hover:bg-[#009D90] transition-colors shadow-sm">
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#F59E0B] text-white text-sm font-semibold rounded-full hover:bg-[#D97706] transition-colors shadow-sm">
               Get In Touch
             </Link>
           </div>
@@ -140,13 +140,13 @@ export default function Navbar() {
             {NAV_LINKS.map((link) => (
               <Link key={link.label} href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-4 py-3 text-sm font-semibold text-slate-700 hover:text-[#00C4B4] hover:bg-slate-50 rounded-xl transition-colors">
+                className="block px-4 py-3 text-sm font-semibold text-slate-700 hover:text-[#F59E0B] hover:bg-slate-50 rounded-xl transition-colors">
                 {link.label}
               </Link>
             ))}
             <div className="pt-5 space-y-3 border-t border-slate-100 mt-4">
               <Link href="/contact" onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#00C4B4] text-white font-semibold rounded-full text-sm">
+                className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#F59E0B] text-white font-semibold rounded-full text-sm">
                 Get In Touch
               </Link>
               <a href="tel:+918898489138"

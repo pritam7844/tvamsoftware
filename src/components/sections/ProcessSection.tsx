@@ -13,7 +13,7 @@ const STEPS = [
     num: '02',
     title: 'Strategy',
     desc: 'Roadmap, tech stack, team structure. We decide what to build first and why — based on data, not guesses.',
-    color: '#6366F1',
+    color: '#F59E0B',
   },
   {
     icon: PenTool,
@@ -27,7 +27,7 @@ const STEPS = [
     num: '04',
     title: 'Build',
     desc: 'Agile sprints. CI/CD pipelines. Clean, tested, documented code. You can see progress every single week.',
-    color: '#00C4B4',
+    color: '#F59E0B',
   },
   {
     icon: Rocket,
@@ -44,7 +44,7 @@ export default function ProcessSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00C4B4] mb-3">How we work</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">How we work</p>
           <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A]">
             A process refined<br />over 1,500 projects.
           </h2>
@@ -85,11 +85,11 @@ export default function ProcessSection() {
           </div>
           <div className="flex flex-wrap gap-4 shrink-0">
             <a href="/contact"
-              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#00C4B4] text-white font-semibold rounded-full hover:bg-[#009D90] transition-colors">
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#F59E0B] text-white font-semibold rounded-full hover:bg-[#D97706] transition-colors">
               Book a free call
             </a>
             <a href="https://wa.me/918898489138"
-              className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-slate-200 text-slate-700 font-semibold rounded-full hover:border-[#00C4B4] hover:text-[#00C4B4] transition-colors">
+              className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-slate-200 text-slate-700 font-semibold rounded-full hover:border-[#F59E0B] hover:text-[#F59E0B] transition-colors">
               WhatsApp us
             </a>
           </div>

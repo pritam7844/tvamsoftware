@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import Container from '@/components/layout/Container';
+import TypingEffect from '@/components/ui/TypingEffect';
 
 function SocialIcon({ path, label }: { path: string; label: string }) {
   return (
@@ -78,7 +79,7 @@ export default function Footer() {
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#00C4B4] text-white font-semibold rounded-full hover:bg-[#009D90] transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#F59E0B] text-white font-semibold rounded-full hover:bg-[#D97706] transition-colors"
             >
               Start a Project →
             </Link>
@@ -93,23 +94,25 @@ export default function Footer() {
           {/* Brand col */}
           <div className="lg:col-span-2">
             <Link href="/" className="text-2xl font-extrabold tracking-tight">
-              tech<span className="text-[#00C4B4]">hugo</span>
+              Tvam <span className="text-[#F59E0B]">Software</span>
             </Link>
             <p className="mt-4 text-slate-400 text-sm leading-relaxed max-w-sm">
-              A global mobile app development company crafting digital experiences for visionaries. 50,000+ happy clients worldwide.
+              A global mobile app development{' '}
+              <TypingEffect className="text-[#F59E0B]" />
+              {' '}crafting digital experiences for visionaries. 50,000+ happy clients worldwide.
             </p>
             <div className="mt-6 space-y-2 text-sm text-slate-400">
-              <a href="tel:+918898489138" className="flex items-center gap-2 hover:text-[#00C4B4] transition-colors">
+              <a href="tel:+918898489138" className="flex items-center gap-2 hover:text-[#F59E0B] transition-colors">
                 <Phone size={14} /> +91 88984 89138
               </a>
-              <a href="mailto:sales@tvamsoftware.com" className="flex items-center gap-2 hover:text-[#00C4B4] transition-colors">
+              <a href="mailto:sales@tvamsoftware.com" className="flex items-center gap-2 hover:text-[#F59E0B] transition-colors">
                 <Mail size={14} /> sales@tvamsoftware.com
               </a>
             </div>
             <div className="mt-6 flex gap-4">
               {SOCIALS.map(({ key, href, label }) => (
                 <a key={label} href={href} aria-label={label}
-                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-slate-400 hover:text-white hover:border-[#00C4B4] hover:bg-[#00C4B4]/10 transition-all">
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-slate-400 hover:text-white hover:border-[#F59E0B] hover:bg-[#F59E0B]/10 transition-all">
                   <SocialIcon path={SOCIAL_PATHS[key]} label={label} />
                 </a>
               ))}
@@ -123,7 +126,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {links.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="text-sm text-slate-400 hover:text-[#00C4B4] transition-colors">
+                    <Link href={l.href} className="text-sm text-slate-400 hover:text-[#F59E0B] transition-colors">
                       {l.label}
                     </Link>
                   </li>
@@ -134,19 +137,19 @@ export default function Footer() {
         </div>
 
         {/* Offices */}
-        <div className="border-t border-white/10 py-10">
+        {/* <div className="border-t border-white/10 py-10">
           <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">Our Offices</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {OFFICES.map((o) => (
               <div key={o.city}>
                 <p className="text-sm font-medium text-slate-300 flex items-center gap-1 mb-1">
-                  <MapPin size={12} className="text-[#00C4B4]" /> {o.city}
+                  <MapPin size={12} className="text-[#F59E0B]" /> {o.city}
                 </p>
                 <p className="text-xs text-slate-500 leading-relaxed">{o.address}</p>
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">

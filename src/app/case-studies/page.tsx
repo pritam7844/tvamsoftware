@@ -169,14 +169,14 @@ export default function CaseStudiesPage() {
                     <p className="text-slate-600 leading-relaxed">{c.story}</p>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {c.tags.map((tag) => (
-                        <span key={tag} className="px-3 py-1 text-xs bg-[#00C4B4]/10 text-[#00C4B4] border border-[#00C4B4]/20 rounded-full font-medium">
+                        <span key={tag} className="px-3 py-1 text-xs bg-[#F59E0B]/10 text-[#F59E0B] border border-[#F59E0B]/20 rounded-full font-medium">
                           {tag}
                         </span>
                       ))}
                     </div>
                   </div>
                   <Link href={c.href}
-                    className="inline-flex items-center gap-2 mt-6 text-[#00C4B4] font-semibold hover:gap-3 transition-all">
+                    className="inline-flex items-center gap-2 mt-6 text-[#F59E0B] font-semibold hover:gap-3 transition-all">
                     Read Full Case Study <ArrowRight size={16} />
                   </Link>
                 </div>

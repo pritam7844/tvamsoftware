@@ -26,7 +26,7 @@ const CASES = [
     stat: '$18B',
     statLabel: 'Valuation',
     detail: "Features used by 150M+ students daily. The world's most valuable EdTech company.",
-    color: '#6366F1',
+    color: '#F59E0B',
     href: '/case-studies/byjus',
   },
   {
@@ -66,7 +66,7 @@ export default function CaseStudiesSection() {
         {/* Header */}
         <div className="grid lg:grid-cols-3 gap-10 items-end mb-16">
           <div className="lg:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00C4B4] mb-3">Proof of work</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">Proof of work</p>
             <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A] leading-tight">
               The apps our clients<br />
               built their empires on.
@@ -77,7 +77,7 @@ export default function CaseStudiesSection() {
               $869M+ raised collectively. Guinness records. Billion-dollar valuations. Not theory — results.
             </p>
             <Link href="/case-studies"
-              className="inline-flex items-center gap-2 text-[#00C4B4] font-semibold text-sm hover:gap-3 transition-all">
+              className="inline-flex items-center gap-2 text-[#F59E0B] font-semibold text-sm hover:gap-3 transition-all">
               All case studies <ArrowRight size={14} />
             </Link>
           </div>
@@ -96,7 +96,7 @@ export default function CaseStudiesSection() {
                   style={{ background: c.color }} />
 
                 <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{c.tag}</span>
-                <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#00C4B4] transition-colors">
+                <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#F59E0B] transition-colors">
                   {c.name}
                 </h3>
                 <p className="text-xs text-slate-500 leading-relaxed mb-5">{c.detail}</p>
@@ -106,7 +106,7 @@ export default function CaseStudiesSection() {
                     <div className="text-3xl font-black leading-none" style={{ color: c.color }}>{c.stat}</div>
                     <div className="text-xs text-slate-400 mt-1">{c.statLabel}</div>
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 group-hover:text-[#00C4B4] group-hover:gap-2 transition-all">
+                  <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 group-hover:text-[#F59E0B] group-hover:gap-2 transition-all">
                     Read <ArrowRight size={12} />
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function CaseStudiesSection() {
                   style={{ background: c.color }} />
                 <div>
                   <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{c.tag}</span>
-                  <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#00C4B4] transition-colors">
+                  <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#F59E0B] transition-colors">
                     {c.name}
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">{c.detail}</p>
@@ -139,7 +139,7 @@ export default function CaseStudiesSection() {
             ))}
 
             {/* Funding highlight tile */}
-            <div className="rounded-2xl border border-[#00C4B4]/30 bg-gradient-to-br from-[#00C4B4]/8 to-[#6366F1]/8 p-6">
+            <div className="rounded-2xl border border-[#F59E0B]/30 bg-gradient-to-br from-[#F59E0B]/8 to-[#F59E0B]/8 p-6">
               <p className="text-xs font-semibold text-slate-500 mb-1">Total raised by our apps</p>
               <div className="text-4xl font-black text-[#0F172A]">$869M+</div>
               <p className="text-xs text-slate-400 mt-2">in the last year alone</p>

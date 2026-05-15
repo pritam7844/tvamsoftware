@@ -89,17 +89,17 @@ export default function ServicesPage() {
               <span className="text-3xl">{cat.icon}</span>
               <h2 className="text-2xl font-extrabold text-[#0F172A]">{cat.category}</h2>
             </div>
-            <div className="h-1 w-16 bg-gradient-to-r from-[#00C4B4] to-[#6366F1] rounded-full" />
+            <div className="h-1 w-16 bg-gradient-to-r from-[#F59E0B] to-[#F59E0B] rounded-full" />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {cat.services.map((s) => (
               <Link key={s.title} href={s.href}
-                className="group bg-white rounded-2xl p-6 border border-slate-200 card-hover hover:border-[#00C4B4]/40">
-                <h3 className="text-base font-bold text-[#0F172A] mb-2 group-hover:text-[#00C4B4] transition-colors">
+                className="group bg-white rounded-2xl p-6 border border-slate-200 card-hover hover:border-[#F59E0B]/40">
+                <h3 className="text-base font-bold text-[#0F172A] mb-2 group-hover:text-[#F59E0B] transition-colors">
                   {s.title}
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed mb-4">{s.desc}</p>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#00C4B4] group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#F59E0B] group-hover:gap-2 transition-all">
                   Learn more <ArrowRight size={14} />
                 </span>
               </Link>

@@ -10,26 +10,26 @@ export default function CtaSection() {
         <div className="relative rounded-3xl border border-slate-200 bg-[#F8FAFC] overflow-hidden shadow-sm">
 
           {/* Top accent strip */}
-          <div className="h-1 w-full bg-gradient-to-r from-[#00C4B4] via-[#6366F1] to-[#00C4B4]" />
+          <div className="h-1 w-full bg-gradient-to-r from-[#F59E0B] via-[#F59E0B] to-[#F59E0B]" />
 
           {/* Subtle vector bg — static circles */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <svg viewBox="0 0 900 340" className="absolute right-0 top-0 h-full opacity-[0.04]" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
-              <circle cx="750" cy="80"  r="180" stroke="#00C4B4" strokeWidth="1.5" fill="none" />
-              <circle cx="750" cy="80"  r="130" stroke="#00C4B4" strokeWidth="1" fill="none" />
-              <circle cx="750" cy="80"  r="80"  stroke="#6366F1" strokeWidth="1" fill="none" />
-              <circle cx="820" cy="280" r="120" stroke="#6366F1" strokeWidth="1.5" fill="none" />
-              <circle cx="120" cy="300" r="90"  stroke="#00C4B4" strokeWidth="1" fill="none" />
+              <circle cx="750" cy="80"  r="180" stroke="#F59E0B" strokeWidth="1.5" fill="none" />
+              <circle cx="750" cy="80"  r="130" stroke="#F59E0B" strokeWidth="1" fill="none" />
+              <circle cx="750" cy="80"  r="80"  stroke="#F59E0B" strokeWidth="1" fill="none" />
+              <circle cx="820" cy="280" r="120" stroke="#F59E0B" strokeWidth="1.5" fill="none" />
+              <circle cx="120" cy="300" r="90"  stroke="#F59E0B" strokeWidth="1" fill="none" />
             </svg>
           </div>
 
           <div className="relative px-8 py-16 lg:px-20 lg:py-20">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00C4B4] mb-5">Let&apos;s talk</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-5">Let&apos;s talk</p>
 
               <h2 className="text-4xl sm:text-5xl font-black text-[#0F172A] leading-tight">
                 Your idea deserves<br />
-                <span className="text-[#00C4B4]">a great team.</span>
+                <span className="text-[#F59E0B]">a great team.</span>
               </h2>
 
               <p className="mt-5 text-slate-500 text-base leading-relaxed max-w-lg mx-auto">
@@ -48,7 +48,7 @@ export default function CtaSection() {
                   <MessageCircle size={15} /> WhatsApp
                 </a>
                 <a href="tel:+918898489138"
-                  className="inline-flex items-center gap-2.5 px-8 py-4 border border-slate-200 text-slate-700 font-semibold rounded-full text-sm hover:border-[#00C4B4] hover:text-[#00C4B4] hover:bg-[#00C4B4]/5 transition-colors">
+                  className="inline-flex items-center gap-2.5 px-8 py-4 border border-slate-200 text-slate-700 font-semibold rounded-full text-sm hover:border-[#F59E0B] hover:text-[#F59E0B] hover:bg-[#F59E0B]/5 transition-colors">
                   <Phone size={15} /> +91 88984 89138
                 </a>
               </div>
@@ -57,7 +57,7 @@ export default function CtaSection() {
               <div className="mt-10 flex flex-wrap justify-center gap-5 text-xs text-slate-500">
                 {['Free consultation. No commitment.', 'Reply within 24 hours.', 'NDA available on request.'].map((item) => (
                   <span key={item} className="flex items-center gap-1.5">
-                    <CheckCircle size={13} className="text-[#00C4B4]" />
+                    <CheckCircle size={13} className="text-[#F59E0B]" />
                     {item}
                   </span>
                 ))}

@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
 
         <div className="grid lg:grid-cols-3 gap-10 items-end mb-16">
           <div className="lg:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00C4B4] mb-3">What clients say</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">What clients say</p>
             <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A] leading-tight">
               Don&apos;t take our word for it.
             </h2>
@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
             <div key={t.name}
               className={`break-inside-avoid rounded-2xl border p-6 ${i === 0 || i === 4 ? 'bg-[#0A0E1A] border-white/10' : 'bg-[#F8FAFC] border-slate-200'}`}>
               <div className="flex items-start justify-between mb-4">
-                <Quote size={20} className={i === 0 || i === 4 ? 'text-[#00C4B4]/60' : 'text-slate-300'} />
+                <Quote size={20} className={i === 0 || i === 4 ? 'text-[#F59E0B]/60' : 'text-slate-300'} />
                 <div className="flex items-center gap-2">
                   <StarRow count={t.rating} />
                   <span className={`text-[10px] font-semibold uppercase tracking-wider ${i === 0 || i === 4 ? 'text-slate-500' : 'text-slate-400'}`}>
@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
                 &ldquo;{t.text}&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#00C4B4] to-[#6366F1] flex items-center justify-center text-white font-bold text-xs shrink-0">
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#F59E0B] to-[#F59E0B] flex items-center justify-center text-white font-bold text-xs shrink-0">
                   {t.name[0]}
                 </div>
                 <div>

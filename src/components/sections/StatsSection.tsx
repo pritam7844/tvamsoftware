@@ -1,8 +1,8 @@
 import { TrendingUp, Users, Globe, Zap, Award, Clock } from 'lucide-react';
 
 const STATS = [
-  { icon: TrendingUp, value: '$869M+', label: 'Funding raised by our apps', accent: '#00C4B4' },
-  { icon: Users,      value: '50,000+', label: 'Happy clients globally', accent: '#6366F1' },
+  { icon: TrendingUp, value: '$869M+', label: 'Funding raised by our apps', accent: '#F59E0B' },
+  { icon: Users,      value: '50,000+', label: 'Happy clients globally', accent: '#F59E0B' },
   { icon: Globe,      value: '25+', label: 'Countries served', accent: '#F59E0B' },
   { icon: Zap,        value: '1,500+', label: 'Products shipped', accent: '#10B981' },
   { icon: Award,      value: '500+', label: 'Team members', accent: '#EF4444' },

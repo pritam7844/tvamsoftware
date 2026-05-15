@@ -25,7 +25,7 @@ function Marquee({ items, reverse = false }: { items: string[]; reverse?: boolea
         {doubled.map((name, i) => (
           <span key={i}
             className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold border whitespace-nowrap
-                       bg-white text-slate-600 border-slate-200 hover:border-[#00C4B4]/40 hover:text-[#00C4B4] transition-colors cursor-default">
+                       bg-white text-slate-600 border-slate-200 hover:border-[#F59E0B]/40 hover:text-[#F59E0B] transition-colors cursor-default">
             {name}
           </span>
         ))}
@@ -40,7 +40,7 @@ export default function ClientsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00C4B4] mb-3">Trusted by</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">Trusted by</p>
             <h2 className="text-4xl font-black text-[#0F172A]">
               50,000+ clients.<br />5 continents.
             </h2>

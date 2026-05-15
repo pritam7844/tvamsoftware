@@ -19,7 +19,7 @@ export default function AwardsSection() {
         <div className="flex flex-col lg:flex-row gap-16">
           {/* Left — heading */}
           <div className="lg:w-80 shrink-0">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00C4B4] mb-3">Recognition</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">Recognition</p>
             <h2 className="text-4xl font-black text-[#0F172A] leading-tight">
               The industry<br />has noticed.
             </h2>
@@ -45,14 +45,14 @@ export default function AwardsSection() {
           <div className="flex-1 grid sm:grid-cols-2 gap-3">
             {AWARDS.map((a) => (
               <div key={a.title}
-                className="group flex items-start gap-4 bg-white rounded-2xl p-5 border border-slate-200 hover:border-[#00C4B4]/30 hover:shadow-md transition-all">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00C4B4]/15 to-[#6366F1]/15 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                  <Trophy size={16} className="text-[#00C4B4]" />
+                className="group flex items-start gap-4 bg-white rounded-2xl p-5 border border-slate-200 hover:border-[#F59E0B]/30 hover:shadow-md transition-all">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F59E0B]/15 to-[#F59E0B]/15 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <Trophy size={16} className="text-[#F59E0B]" />
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#0F172A] leading-snug">{a.title}</p>
                   <div className="flex items-center gap-2 mt-1.5">
-                    <BadgeCheck size={12} className="text-[#00C4B4]" />
+                    <BadgeCheck size={12} className="text-[#F59E0B]" />
                     <span className="text-xs text-slate-500">{a.source} · {a.year}</span>
                   </div>
                 </div>
