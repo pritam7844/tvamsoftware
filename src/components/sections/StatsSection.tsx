@@ -1,12 +1,12 @@
 import { TrendingUp, Users, Globe, Zap, Award, Clock } from 'lucide-react';
 
 const STATS = [
-  { icon: TrendingUp, value: '$869M+', label: 'Funding raised by our apps', accent: '#F59E0B' },
-  { icon: Users,      value: '50,000+', label: 'Happy clients globally', accent: '#F59E0B' },
-  { icon: Globe,      value: '25+', label: 'Countries served', accent: '#F59E0B' },
-  { icon: Zap,        value: '1,500+', label: 'Products shipped', accent: '#10B981' },
-  { icon: Award,      value: '500+', label: 'Team members', accent: '#EF4444' },
-  { icon: Clock,      value: '12+', label: 'Years of excellence', accent: '#8B5CF6' },
+  { icon: TrendingUp, value: 'Est. 2017', label: 'Established in Mumbai', accent: '#006837' },
+  { icon: Users,      value: '98%', label: 'Client satisfaction rate', accent: '#EAA812' },
+  { icon: Globe,      value: '180+', label: 'Enterprise deployments', accent: '#006837' },
+  { icon: Zap,        value: '99.9%', label: 'System uptime maintained', accent: '#EAA812' },
+  { icon: Award,      value: 'ISO 27001', label: 'Security & compliance', accent: '#006837' },
+  { icon: Clock,      value: '24/7/365', label: 'Enterprise support & SLA', accent: '#EAA812' },
 ];
 
 export default function StatsSection() {
@@ -20,10 +20,10 @@ export default function StatsSection() {
                 style={{ backgroundColor: `${s.accent}15` }}>
                 <s.icon size={18} style={{ color: s.accent }} />
               </div>
-              <div className="text-2xl lg:text-3xl font-black text-[#0F172A] leading-none" style={{ color: s.accent }}>
+              <div className="text-xl lg:text-2xl font-black leading-none" style={{ color: s.accent }}>
                 {s.value}
               </div>
-              <p className="text-xs text-slate-500 mt-1.5 leading-snug font-medium">{s.label}</p>
+              <p className="text-[10px] text-slate-500 mt-1.5 leading-snug font-medium uppercase tracking-wider">{s.label}</p>
             </div>
           ))}
         </div>

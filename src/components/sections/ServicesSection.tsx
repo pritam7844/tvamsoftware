@@ -92,14 +92,14 @@ export default function ServicesSection() {
         {/* Header — left-aligned, intentional */}
         <div className="grid lg:grid-cols-3 gap-10 items-end mb-16">
           <div className="lg:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">What we build</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#006837] mb-3">What we build</p>
             <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A] leading-tight">
               Every service<br />your product needs.
             </h2>
           </div>
           <div className="text-slate-500 text-sm leading-relaxed lg:text-right">
             <p>From a single-screen MVP to a full-stack enterprise platform — we cover the complete technology spectrum.</p>
-            <Link href="/services" className="inline-flex items-center gap-1.5 mt-4 text-[#F59E0B] font-semibold text-sm hover:gap-3 transition-all">
+            <Link href="/services" className="inline-flex items-center gap-1.5 mt-4 text-[#006837] font-semibold text-sm hover:gap-3 transition-all">
               All services <ArrowRight size={14} />
             </Link>
           </div>
@@ -119,7 +119,7 @@ export default function ServicesSection() {
                 <s.icon size={20} style={{ color: s.color }} strokeWidth={1.5} />
               </div>
 
-              <h3 className="font-bold text-[#0F172A] text-[15px] mb-2 group-hover:text-[#F59E0B] transition-colors">
+              <h3 className="font-bold text-[#0F172A] text-[15px] mb-2 group-hover:text-[#006837] transition-colors">
                 {s.title}
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed">{s.desc}</p>

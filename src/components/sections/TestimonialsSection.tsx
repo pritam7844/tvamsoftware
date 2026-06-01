@@ -32,7 +32,7 @@ const TESTIMONIALS = [
   {
     name: 'Amin Rasti',
     role: 'CEO, McGillivray Group',
-    text: "Swift compared to every other agency we've tried. Tvam Software delivered our enterprise portal in record time without compromising on quality or security. Would hire again immediately.",
+    text: "Swift compared to every other agency we've tried. Tvam Key Software delivered our enterprise portal in record time without compromising on quality or security. Would hire again immediately.",
     platform: 'Clutch',
     rating: 5,
   },
@@ -49,7 +49,7 @@ function StarRow({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <svg key={i} width={12} height={12} viewBox="0 0 24 24" fill="#FBBF24">
+        <svg key={i} width={12} height={12} viewBox="0 0 24 24" fill="#EAA812">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       ))}
@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
 
         <div className="grid lg:grid-cols-3 gap-10 items-end mb-16">
           <div className="lg:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">What clients say</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#006837] mb-3">What clients say</p>
             <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A] leading-tight">
               Don&apos;t take our word for it.
             </h2>
@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
             <div key={t.name}
               className={`break-inside-avoid rounded-2xl border p-6 ${i === 0 || i === 4 ? 'bg-[#0A0E1A] border-white/10' : 'bg-[#F8FAFC] border-slate-200'}`}>
               <div className="flex items-start justify-between mb-4">
-                <Quote size={20} className={i === 0 || i === 4 ? 'text-[#F59E0B]/60' : 'text-slate-300'} />
+                <Quote size={20} className={i === 0 || i === 4 ? 'text-[#EAA812]/60' : 'text-slate-300'} />
                 <div className="flex items-center gap-2">
                   <StarRow count={t.rating} />
                   <span className={`text-[10px] font-semibold uppercase tracking-wider ${i === 0 || i === 4 ? 'text-slate-500' : 'text-slate-400'}`}>
@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
                 &ldquo;{t.text}&rdquo;
               </p>
               <div className="mt-5 flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#F59E0B] to-[#F59E0B] flex items-center justify-center text-white font-bold text-xs shrink-0">
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#006837] to-[#006837] flex items-center justify-center text-white font-bold text-xs shrink-0">
                   {t.name[0]}
                 </div>
                 <div>

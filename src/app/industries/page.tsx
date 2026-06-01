@@ -6,8 +6,8 @@ import Badge from '@/components/ui/Badge';
 import CtaSection from '@/components/sections/CtaSection';
 
 export const metadata: Metadata = {
-  title: 'Industries | Tvam Software — Domain Expertise Across 25+ Sectors',
-  description: 'Tvam Software builds specialised digital solutions for healthcare, fintech, ecommerce, e-learning, food, travel, and 20+ more industries.',
+  title: 'Industries | Tvam Key Software — Domain Expertise & Sectors',
+  description: 'Tvam Key Software engineers specialised digital solutions and enterprise systems for key industries including healthcare, fintech, retail, and logistics.',
 };
 
 const INDUSTRIES = [
@@ -143,7 +143,7 @@ export default function IndustriesPage() {
                     <span key={app} className="px-2 py-1 text-xs bg-slate-100 text-slate-600 rounded-full">{app}</span>
                   ))}
                 </div>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#F59E0B] group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#006837] group-hover:gap-2 transition-all">
                   Explore Solutions <ArrowRight size={14} />
                 </span>
               </div>

@@ -1,14 +1,14 @@
 const CLIENTS_ROW1 = [
-  'Airtel', 'Dhanuka', 'Mother Dairy', 'Bajaj FinServ', 'White Hat Jr',
-  "Byju's", 'Godfrey Phillips', 'Indofil', 'AVA Technologies',
+  'Enterprise Resource Planning', 'Supply Chain Management', 'Artificial Intelligence', 'Data Analytics', 'Cloud Migration',
+  'API Integrations', 'Identity & Access Control', 'Internet of Things', 'Mobile Solutions',
 ];
 const CLIENTS_ROW2 = [
-  'Indian Navy', 'Central Water Commission', 'IT Dept J&K', 'NIC', 'MyGov',
-  'STPI', 'UPDESCO', 'Delhi Transco', 'NCDC',
+  'Financial Services', 'Healthcare Portals', 'Automotive Systems', 'Logistics Platforms', 'Education Hubs',
+  'Retail Systems', 'E-commerce Gateways', 'Telecommunications', 'SaaS Solutions',
 ];
 const FUNDING_PARTNERS = [
-  'Microsoft', 'Google', 'Y Combinator', 'Sequoia', 'Goldman Sachs',
-  'Matrix Partners', 'Titan Capital', 'Saama Capital',
+  'ISO 27001 Security', 'ISO 9001 Quality', 'AWS Advanced Partner', 'GCP Partner', 'Azure Certified',
+  'CI/CD Compliance', 'SOC 2 Compliant', 'GDPR Ready',
 ];
 
 function Marquee({ items, reverse = false }: { items: string[]; reverse?: boolean }) {
@@ -24,8 +24,8 @@ function Marquee({ items, reverse = false }: { items: string[]; reverse?: boolea
       >
         {doubled.map((name, i) => (
           <span key={i}
-            className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold border whitespace-nowrap
-                       bg-white text-slate-600 border-slate-200 hover:border-[#F59E0B]/40 hover:text-[#F59E0B] transition-colors cursor-default">
+            className="inline-flex items-center px-5 py-2.5 rounded-full text-xs font-semibold border whitespace-nowrap
+                       bg-white text-slate-600 border-slate-200 hover:border-[#006837]/40 hover:text-[#006837] transition-colors cursor-default">
             {name}
           </span>
         ))}
@@ -40,13 +40,13 @@ export default function ClientsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">Trusted by</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#006837] mb-3">Enterprise Domains</p>
             <h2 className="text-4xl font-black text-[#0F172A]">
-              50,000+ clients.<br />5 continents.
+              Industry leading.<br />Globally compliant.
             </h2>
           </div>
           <p className="text-slate-500 text-sm max-w-xs leading-relaxed">
-            From government bodies to VC-backed unicorns — they chose Tvam Software because great work speaks for itself.
+            From regulated financial platforms to high-uptime logistical gateways — we engineer systems built for durability.
           </p>
         </div>
       </div>
@@ -62,10 +62,10 @@ export default function ClientsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12">
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-center justify-center text-sm text-slate-400">
           {[
-            { label: 'Government sector clients', value: '15+' },
-            { label: 'Enterprise clients', value: '200+' },
-            { label: 'VC-backed startups', value: '500+' },
-            { label: 'Avg. client tenure', value: '3.2 yrs' },
+            { label: 'Enterprise integrations', value: '400+' },
+            { label: 'Security & compliance audits', value: '100% Pass' },
+            { label: 'Active engineering hubs', value: 'Mumbai BKC' },
+            { label: 'Average SLA commitment', value: '99.9%' },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-xl font-extrabold text-[#0F172A]">{s.value}</div>

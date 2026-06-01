@@ -7,10 +7,10 @@ import Footer from '@/components/common/Footer';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Tvam Software — Top Mobile App Development Company in India & USA',
+  title: 'Tvam Key Software — Enterprise Digital Engineering & Software Systems',
   description:
-    'Tvam Software crafts world-class mobile apps, AI solutions, and digital products. $869M+ funding raised by our apps. 50,000+ happy clients worldwide.',
-  keywords: 'mobile app development, iOS development, Android development, AI solutions, React Native, Flutter',
+    'Tvam Key Software engineers robust digital platforms, scalable cloud architectures, and intelligent software systems from our headquarters in Mumbai BKC.',
+  keywords: 'enterprise software development, software engineering, cloud architecture, system integration, digital transformation, AI systems',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

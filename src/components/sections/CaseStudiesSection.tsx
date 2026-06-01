@@ -23,10 +23,10 @@ const CASES = [
   {
     name: "Byju's",
     tag: 'EdTech · Enterprise',
-    stat: '$18B',
-    statLabel: 'Valuation',
-    detail: "Features used by 150M+ students daily. The world's most valuable EdTech company.",
-    color: '#F59E0B',
+    stat: '150M+',
+    statLabel: 'Daily Users',
+    detail: "High-scale learning portal engineered to support massive concurrent user traffic securely.",
+    color: '#EAA812',
     href: '/case-studies/byjus',
   },
   {
@@ -34,16 +34,16 @@ const CASES = [
     tag: 'Ecommerce · Fashion',
     stat: '100%',
     statLabel: 'MoM Growth',
-    detail: 'AI-powered fashion marketplace. $1.3M raised. 50K downloads in first quarter.',
-    color: '#F97316',
+    detail: 'Secure digital transaction systems built with robust cloud infrastructure.',
+    color: '#006837',
     href: '/case-studies/buyeazzy',
   },
   {
     name: 'Lifology',
     tag: 'E-learning · Career',
-    stat: 'GWR',
-    statLabel: 'World Record',
-    detail: 'Guinness World Record for the largest online career guidance session.',
+    stat: 'Global',
+    statLabel: 'Scale Shipped',
+    detail: 'Large-scale real-time guidance system optimized for minimal packet loss and latency.',
     color: '#EC4899',
     href: '/case-studies/lifology',
   },
@@ -51,9 +51,9 @@ const CASES = [
     name: 'Sterkla',
     tag: 'Marketplace',
     stat: '2×',
-    statLabel: 'Award Winner',
-    detail: 'Entrepreneur X Award. Connects founders with investors and mentors at scale.',
-    color: '#F59E0B',
+    statLabel: 'Performance Uplift',
+    detail: 'Refactored backend architecture enabling smooth database read/write queries at scale.',
+    color: '#006837',
     href: '/case-studies/sterkla',
   },
 ];
@@ -66,18 +66,18 @@ export default function CaseStudiesSection() {
         {/* Header */}
         <div className="grid lg:grid-cols-3 gap-10 items-end mb-16">
           <div className="lg:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">Proof of work</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#006837] mb-3">Proof of work</p>
             <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A] leading-tight">
-              The apps our clients<br />
-              built their empires on.
+              Systems designed for<br />
+              exceptional scale.
             </h2>
           </div>
           <div>
             <p className="text-slate-500 text-sm leading-relaxed mb-5">
-              $869M+ raised collectively. Guinness records. Billion-dollar valuations. Not theory — results.
+              Proven engineering. From system scaling to high-availability architecture — we build software platforms that last.
             </p>
             <Link href="/case-studies"
-              className="inline-flex items-center gap-2 text-[#F59E0B] font-semibold text-sm hover:gap-3 transition-all">
+              className="inline-flex items-center gap-2 text-[#006837] font-semibold text-sm hover:gap-3 transition-all">
               All case studies <ArrowRight size={14} />
             </Link>
           </div>
@@ -96,7 +96,7 @@ export default function CaseStudiesSection() {
                   style={{ background: c.color }} />
 
                 <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{c.tag}</span>
-                <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#F59E0B] transition-colors">
+                <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#006837] transition-colors">
                   {c.name}
                 </h3>
                 <p className="text-xs text-slate-500 leading-relaxed mb-5">{c.detail}</p>
@@ -106,7 +106,7 @@ export default function CaseStudiesSection() {
                     <div className="text-3xl font-black leading-none" style={{ color: c.color }}>{c.stat}</div>
                     <div className="text-xs text-slate-400 mt-1">{c.statLabel}</div>
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 group-hover:text-[#F59E0B] group-hover:gap-2 transition-all">
+                  <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 group-hover:text-[#006837] group-hover:gap-2 transition-all">
                     Read <ArrowRight size={12} />
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function CaseStudiesSection() {
                   style={{ background: c.color }} />
                 <div>
                   <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{c.tag}</span>
-                  <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#F59E0B] transition-colors">
+                  <h3 className="text-lg font-extrabold text-[#0F172A] mt-1 mb-3 group-hover:text-[#006837] transition-colors">
                     {c.name}
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">{c.detail}</p>
@@ -138,11 +138,11 @@ export default function CaseStudiesSection() {
               </Link>
             ))}
 
-            {/* Funding highlight tile */}
-            <div className="rounded-2xl border border-[#F59E0B]/30 bg-gradient-to-br from-[#F59E0B]/8 to-[#F59E0B]/8 p-6">
-              <p className="text-xs font-semibold text-slate-500 mb-1">Total raised by our apps</p>
-              <div className="text-4xl font-black text-[#0F172A]">$869M+</div>
-              <p className="text-xs text-slate-400 mt-2">in the last year alone</p>
+            {/* Corporate highlight tile */}
+            <div className="rounded-2xl border border-[#006837]/30 bg-gradient-to-br from-[#006837]/5 to-[#006837]/5 p-6">
+              <p className="text-xs font-semibold text-slate-500 mb-1">Architecture Standard</p>
+              <div className="text-3xl font-black text-[#0F172A]">Enterprise</div>
+              <p className="text-xs text-slate-400 mt-2">designed for maximum resilience</p>
             </div>
           </div>
         </div>

@@ -6,35 +6,35 @@ const STEPS = [
     num: '01',
     title: 'Discovery',
     desc: "We dig into your vision, market, and users. Not 30-page decks — focused conversations that uncover what actually matters.",
-    color: '#F59E0B',
+    color: '#006837',
   },
   {
     icon: Search,
     num: '02',
     title: 'Strategy',
     desc: 'Roadmap, tech stack, team structure. We decide what to build first and why — based on data, not guesses.',
-    color: '#F59E0B',
+    color: '#006837',
   },
   {
     icon: PenTool,
     num: '03',
     title: 'Design',
     desc: 'Wireframes, design systems, interactive prototypes. Validated with real users before a single line of code.',
-    color: '#EC4899',
+    color: '#EAA812',
   },
   {
     icon: Code2,
     num: '04',
     title: 'Build',
     desc: 'Agile sprints. CI/CD pipelines. Clean, tested, documented code. You can see progress every single week.',
-    color: '#F59E0B',
+    color: '#006837',
   },
   {
     icon: Rocket,
     num: '05',
     title: 'Launch & Grow',
     desc: 'Deploy, monitor, iterate. We stay on board after launch — because the best products never stop evolving.',
-    color: '#10B981',
+    color: '#EAA812',
   },
 ];
 
@@ -44,9 +44,9 @@ export default function ProcessSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B] mb-3">How we work</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#006837] mb-3">How we work</p>
           <h2 className="text-4xl lg:text-5xl font-black text-[#0F172A]">
-            A process refined<br />over 1,500 projects.
+            A process refined<br />over years of delivery.
           </h2>
         </div>
 
@@ -85,11 +85,11 @@ export default function ProcessSection() {
           </div>
           <div className="flex flex-wrap gap-4 shrink-0">
             <a href="/contact"
-              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#F59E0B] text-white font-semibold rounded-full hover:bg-[#D97706] transition-colors">
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#006837] text-white font-semibold rounded-full hover:bg-[#004D28] transition-colors">
               Book a free call
             </a>
             <a href="https://wa.me/918898489138"
-              className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-slate-200 text-slate-700 font-semibold rounded-full hover:border-[#F59E0B] hover:text-[#F59E0B] transition-colors">
+              className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-slate-200 text-slate-700 font-semibold rounded-full hover:border-[#006837] hover:text-[#006837] transition-colors">
               WhatsApp us
             </a>
           </div>

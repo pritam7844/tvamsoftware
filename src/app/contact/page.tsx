@@ -1,17 +1,13 @@
 'use client';
 import { useState } from 'react';
 import type { FormEvent } from 'react';
-import { MapPin, Phone, Mail, MessageCircle, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle, Clock, Sparkles } from 'lucide-react';
 import Section from '@/components/layout/Section';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 
 const OFFICES = [
-  { city: 'Noida, India (HQ)', address: '5th Floor, Let\'s Connect Business Park, Sector 136, Noida', phone: '+91 98701 40055' },
-  { city: 'Dulles, USA', address: '22375 Broderick Dr, Suite 225, Dulles, VA 20166', phone: '+1 360-322-4913' },
-  { city: 'Vancouver, Canada', address: '311, 4893 Clarendon St, Vancouver, BC', phone: '' },
-  { city: 'Dubai, UAE', address: 'R320, UM Hurair Second, Dubai', phone: '' },
-  { city: 'London, UK', address: '124 City Road, EC1V 2NX, London', phone: '' },
+  { city: 'Mumbai, India (HQ)', address: 'Level 2, Platina, Block G, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051', phone: '+91 88984 89138' },
 ];
 
 export default function ContactPage() {
@@ -35,10 +31,10 @@ export default function ContactPage() {
           <Badge variant="ghost" className="mb-6 !bg-white/10 !text-white !border-white/20">Get In Touch</Badge>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Let&apos;s Build Something{' '}
-            <span className="gradient-text">Amazing Together</span>
+            <span className="text-[#EAA812]">Amazing Together</span>
           </h1>
           <p className="mt-6 text-lg text-slate-400 max-w-xl mx-auto">
-            Drop us a message and our team will get back to you within 24 hours. Or call us directly — we love talking about great ideas.
+            Drop us a message and our engineering team will get back to you within 24 hours. Or call us directly — we love talking about great architectural ideas.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a href="tel:+918898489138"
@@ -65,7 +61,9 @@ export default function ContactPage() {
 
             {sent ? (
               <div className="text-center py-12">
-                <div className="text-5xl mb-4">🎉</div>
+                <div className="mx-auto w-16 h-16 rounded-full bg-[#006837]/10 flex items-center justify-center text-[#006837] mb-4">
+                  <Sparkles size={28} strokeWidth={1.5} />
+                </div>
                 <h3 className="text-xl font-bold text-[#0F172A] mb-2">Message Sent!</h3>
                 <p className="text-slate-500">We&apos;ll get back to you within 24 hours.</p>
               </div>
@@ -76,39 +74,39 @@ export default function ContactPage() {
                     <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Full Name *</label>
                     <input required name="name" value={form.name} onChange={handleChange}
                       placeholder="John Doe"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#F59E0B] focus:ring-2 focus:ring-[#F59E0B]/20 transition-all" />
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all" />
                   </div>
                   <div>
                     <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Email *</label>
                     <input required type="email" name="email" value={form.email} onChange={handleChange}
                       placeholder="john@company.com"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#F59E0B] focus:ring-2 focus:ring-[#F59E0B]/20 transition-all" />
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all" />
                   </div>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Phone</label>
                     <input type="tel" name="phone" value={form.phone} onChange={handleChange}
-                      placeholder="+91 98765 43210"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#F59E0B] focus:ring-2 focus:ring-[#F59E0B]/20 transition-all" />
+                      placeholder="+91 88984 89138"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all" />
                   </div>
                   <div>
                     <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Company</label>
                     <input name="company" value={form.company} onChange={handleChange}
                       placeholder="Acme Inc."
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#F59E0B] focus:ring-2 focus:ring-[#F59E0B]/20 transition-all" />
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Service Required</label>
                   <select name="service" value={form.service} onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-700 focus:outline-none focus:border-[#F59E0B] focus:ring-2 focus:ring-[#F59E0B]/20 transition-all bg-white">
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-700 focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all bg-white">
                     <option value="">Select a service...</option>
                     <option>iOS Development</option>
                     <option>Android Development</option>
                     <option>React / Next.js</option>
                     <option>Flutter Development</option>
-                    <option>AI / ML Development</option>
+                    <option>AI & ML Development</option>
                     <option>UI/UX Design</option>
                     <option>Cloud Computing</option>
                     <option>Blockchain</option>
@@ -120,9 +118,9 @@ export default function ContactPage() {
                   <textarea required name="message" value={form.message} onChange={handleChange}
                     placeholder="Tell us about your project — what you want to build, your timeline, and any specific requirements..."
                     rows={5}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#F59E0B] focus:ring-2 focus:ring-[#F59E0B]/20 transition-all resize-none" />
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all resize-none" />
                 </div>
-                <Button type="submit" size="lg" className="w-full">
+                <Button type="submit" size="lg" className="w-full bg-[#006837] hover:bg-[#004D28] text-white">
                   Send Message →
                 </Button>
               </form>
@@ -135,30 +133,21 @@ export default function ContactPage() {
               <h3 className="text-lg font-bold text-[#0F172A] mb-4">Contact Details</h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center shrink-0">
-                    <Phone size={14} className="text-[#F59E0B]" />
+                  <div className="w-8 h-8 rounded-lg bg-[#006837]/10 flex items-center justify-center shrink-0">
+                    <Phone size={14} className="text-[#006837]" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-400 font-medium">Sales (India)</p>
-                    <a href="tel:+918898489138" className="text-sm font-semibold text-[#0F172A] hover:text-[#F59E0B]">+91 88984 89138</a>
+                    <p className="text-xs text-slate-400 font-medium">Sales & HQ (India)</p>
+                    <a href="tel:+918898489138" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837]">+91 88984 89138</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center shrink-0">
-                    <Phone size={14} className="text-[#F59E0B]" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-400 font-medium">Sales (USA)</p>
-                    <a href="tel:+13603224913" className="text-sm font-semibold text-[#0F172A] hover:text-[#F59E0B]">+1 360-322-4913</a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center shrink-0">
-                    <Mail size={14} className="text-[#F59E0B]" />
+                  <div className="w-8 h-8 rounded-lg bg-[#006837]/10 flex items-center justify-center shrink-0">
+                    <Mail size={14} className="text-[#006837]" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-medium">Email</p>
-                    <a href="mailto:sales@tvamsoftware.com" className="text-sm font-semibold text-[#0F172A] hover:text-[#F59E0B]">sales@tvamsoftware.com</a>
+                    <a href="mailto:sales@tvamsoftware.com" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837]">sales@tvamsoftware.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -171,8 +160,8 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center shrink-0">
-                    <Clock size={14} className="text-[#F59E0B]" />
+                  <div className="w-8 h-8 rounded-lg bg-[#006837]/10 flex items-center justify-center shrink-0">
+                    <Clock size={14} className="text-[#006837]" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-medium">Response Time</p>
@@ -182,17 +171,17 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Offices */}
+            {/* Corporate HQ Office */}
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-              <h3 className="text-lg font-bold text-[#0F172A] mb-4">Our Offices</h3>
+              <h3 className="text-lg font-bold text-[#0F172A] mb-4">Our Office</h3>
               <div className="space-y-4">
                 {OFFICES.map((o) => (
                   <div key={o.city} className="flex items-start gap-3">
-                    <MapPin size={14} className="text-[#F59E0B] mt-1 shrink-0" />
+                    <MapPin size={14} className="text-[#EAA812] mt-1 shrink-0" />
                     <div>
                       <p className="text-sm font-semibold text-[#0F172A]">{o.city}</p>
                       <p className="text-xs text-slate-500 mt-0.5">{o.address}</p>
-                      {o.phone && <a href={`tel:${o.phone.replace(/\s/g, '')}`} className="text-xs text-[#F59E0B] hover:underline mt-0.5 block">{o.phone}</a>}
+                      {o.phone && <a href={`tel:${o.phone.replace(/\s/g, '')}`} className="text-xs text-[#006837] hover:underline mt-0.5 block">{o.phone}</a>}
                     </div>
                   </div>
                 ))}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import TypingEffect from '@/components/ui/TypingEffect';
+import Logo from '@/components/common/Logo';
 
 function SocialIcon({ path, label }: { path: string; label: string }) {
   return (
@@ -21,11 +22,7 @@ const SOCIAL_PATHS = {
 };
 
 const OFFICES = [
-  { city: 'Noida, India', address: '5th Floor, Let\'s Connect Business Park, Sector 136' },
-  { city: 'Vancouver, Canada', address: '311, 4893 Clarendon St' },
-  { city: 'Dulles, USA', address: '22375 Broderick Dr, Suite 225' },
-  { city: 'Dubai, UAE', address: 'R320, UM Hurair Second' },
-  { city: 'London, UK', address: '124 City Road, EC1V 2NX' },
+  { city: 'Mumbai, India (HQ)', address: 'Level 2, Platina, Block G, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051' },
 ];
 
 const FOOTER_LINKS = {
@@ -79,7 +76,7 @@ export default function Footer() {
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#F59E0B] text-white font-semibold rounded-full hover:bg-[#D97706] transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#EAA812] !text-slate-900 font-bold rounded-full hover:bg-[#D4AF37] transition-colors"
             >
               Start a Project →
             </Link>
@@ -93,26 +90,26 @@ export default function Footer() {
 
           {/* Brand col */}
           <div className="lg:col-span-2">
-            <Link href="/" className="text-2xl font-extrabold tracking-tight">
-              Tvam <span className="text-[#F59E0B]">Software</span>
+            <Link href="/" className="inline-block">
+              <Logo light={true} />
             </Link>
             <p className="mt-4 text-slate-400 text-sm leading-relaxed max-w-sm">
-              A global mobile app development{' '}
-              <TypingEffect className="text-[#F59E0B]" />
-              {' '}crafting digital experiences for visionaries. 50,000+ happy clients worldwide.
+              A premier digital engineering{' '}
+              <TypingEffect className="text-[#EAA812]" words={['consultancy.', 'partner.', 'architect.', 'innovator.', 'enabler.']} />
+              {' '}crafting state-of-the-art enterprise platforms and intelligent software solutions.
             </p>
             <div className="mt-6 space-y-2 text-sm text-slate-400">
-              <a href="tel:+918898489138" className="flex items-center gap-2 hover:text-[#F59E0B] transition-colors">
+              <a href="tel:+918898489138" className="flex items-center gap-2 hover:text-[#EAA812] transition-colors">
                 <Phone size={14} /> +91 88984 89138
               </a>
-              <a href="mailto:sales@tvamsoftware.com" className="flex items-center gap-2 hover:text-[#F59E0B] transition-colors">
+              <a href="mailto:sales@tvamsoftware.com" className="flex items-center gap-2 hover:text-[#EAA812] transition-colors">
                 <Mail size={14} /> sales@tvamsoftware.com
               </a>
             </div>
             <div className="mt-6 flex gap-4">
               {SOCIALS.map(({ key, href, label }) => (
                 <a key={label} href={href} aria-label={label}
-                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-slate-400 hover:text-white hover:border-[#F59E0B] hover:bg-[#F59E0B]/10 transition-all">
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-slate-400 hover:text-white hover:border-[#EAA812] hover:bg-[#EAA812]/10 transition-all">
                   <SocialIcon path={SOCIAL_PATHS[key]} label={label} />
                 </a>
               ))}
@@ -126,7 +123,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {links.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="text-sm text-slate-400 hover:text-[#F59E0B] transition-colors">
+                    <Link href={l.href} className="text-sm text-slate-400 hover:text-[#EAA812] transition-colors">
                       {l.label}
                     </Link>
                   </li>
@@ -137,23 +134,23 @@ export default function Footer() {
         </div>
 
         {/* Offices */}
-        {/* <div className="border-t border-white/10 py-10">
-          <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">Our Offices</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="border-t border-white/10 py-10">
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">Corporate Office</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {OFFICES.map((o) => (
-              <div key={o.city}>
-                <p className="text-sm font-medium text-slate-300 flex items-center gap-1 mb-1">
-                  <MapPin size={12} className="text-[#F59E0B]" /> {o.city}
+              <div key={o.city} className="max-w-md">
+                <p className="text-sm font-semibold text-slate-300 flex items-center gap-2.5 mb-1.5">
+                  <MapPin size={14} className="text-[#EAA812]" /> {o.city}
                 </p>
-                <p className="text-xs text-slate-500 leading-relaxed">{o.address}</p>
+                <p className="text-xs text-slate-400 leading-relaxed">{o.address}</p>
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Tvam Software. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Tvam Key Software. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
             <Link href="/sitemap" className="hover:text-slate-300 transition-colors">Sitemap</Link>
