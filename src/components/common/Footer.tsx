@@ -22,7 +22,9 @@ const SOCIAL_PATHS = {
 };
 
 const OFFICES = [
-  { city: 'Mumbai, India (HQ)', address: 'Level 2, Platina, Block G, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051' },
+  { city: 'Mumbai, India (HQ)', address: 'Office No. 49, Annex Mall, Near Western Express Highway, Borivali East, Mumbai – 400066, Maharashtra' },
+  { city: 'Registered Office', address: '305, Building No. 2, Wing L, Prathamesh Dreams, Vasai, Palghar, Vasai-Virar City (M Corp) – 401303' },
+  { city: 'Pune Office', address: "Office-743, Gera's Imperium Rise, Wipro Circle, Hinjewadi Phase 2, Pune – 411057" },
 ];
 
 const FOOTER_LINKS = {
@@ -102,8 +104,11 @@ export default function Footer() {
               <a href="tel:+918898489138" className="flex items-center gap-2 hover:text-[#EAA812] transition-colors">
                 <Phone size={14} /> +91 88984 89138
               </a>
-              <a href="mailto:sales@tvamsoftware.com" className="flex items-center gap-2 hover:text-[#EAA812] transition-colors">
-                <Mail size={14} /> sales@tvamsoftware.com
+              <a href="tel:+917738758226" className="flex items-center gap-2 hover:text-[#EAA812] transition-colors">
+                <Phone size={14} /> +91 77387 58226
+              </a>
+              <a href="mailto:info@tvamkeysoftware.com" className="flex items-center gap-2 hover:text-[#EAA812] transition-colors">
+                <Mail size={14} /> info@tvamkeysoftware.com
               </a>
             </div>
             <div className="mt-6 flex gap-4">
@@ -135,8 +140,8 @@ export default function Footer() {
 
         {/* Offices */}
         <div className="border-t border-white/10 py-10">
-          <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">Corporate Office</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">Our Offices</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {OFFICES.map((o) => (
               <div key={o.city} className="max-w-md">
                 <p className="text-sm font-semibold text-slate-300 flex items-center gap-2.5 mb-1.5">

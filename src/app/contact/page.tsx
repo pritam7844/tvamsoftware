@@ -4,10 +4,11 @@ import type { FormEvent } from 'react';
 import { MapPin, Phone, Mail, MessageCircle, Clock, Sparkles } from 'lucide-react';
 import Section from '@/components/layout/Section';
 import Badge from '@/components/ui/Badge';
-import Button from '@/components/ui/Button';
 
 const OFFICES = [
-  { city: 'Mumbai, India (HQ)', address: 'Level 2, Platina, Block G, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051', phone: '+91 88984 89138' },
+  { city: 'Mumbai, India (HQ)', address: 'Office No. 49, Annex Mall, Near Western Express Highway, Borivali East, Mumbai – 400066, Maharashtra', phone: '+91 88984 89138 / +91 77387 58226' },
+  { city: 'Registered Office', address: '305, Building No. 2, Wing L, Prathamesh Dreams, Vasai, Palghar, Vasai-Virar City (M Corp) – 401303', phone: '' },
+  { city: 'Pune Office', address: "Office-743, Gera's Imperium Rise, Wipro Circle, Hinjewadi Phase 2, Pune – 411057", phone: '' },
 ];
 
 export default function ContactPage() {
@@ -41,13 +42,17 @@ export default function ContactPage() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-full hover:bg-white/20 transition-colors border border-white/20">
               <Phone size={16} /> +91 88984 89138
             </a>
+            <a href="tel:+917738758226"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-full hover:bg-white/20 transition-colors border border-white/20">
+              <Phone size={16} /> +91 77387 58226
+            </a>
             <a href="https://wa.me/918898489138"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366]/20 text-white rounded-full hover:bg-[#25D366]/30 transition-colors border border-[#25D366]/30">
               <MessageCircle size={16} /> WhatsApp
             </a>
-            <a href="mailto:sales@tvamsoftware.com"
+            <a href="mailto:info@tvamkeysoftware.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-full hover:bg-white/20 transition-colors border border-white/20">
-              <Mail size={16} /> sales@tvamsoftware.com
+              <Mail size={16} /> info@tvamkeysoftware.com
             </a>
           </div>
         </div>
@@ -120,9 +125,10 @@ export default function ContactPage() {
                     rows={5}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all resize-none" />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-[#006837] hover:bg-[#004D28] text-white">
+                <button type="submit"
+                >
                   Send Message →
-                </Button>
+                </button>
               </form>
             )}
           </div>
@@ -137,8 +143,17 @@ export default function ContactPage() {
                     <Phone size={14} className="text-[#006837]" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-400 font-medium">Sales & HQ (India)</p>
-                    <a href="tel:+918898489138" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837]">+91 88984 89138</a>
+                    <p className="text-xs text-slate-400 font-medium">Phone (India)</p>
+                    <a href="tel:+918898489138" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837] block">+91 88984 89138</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-[#006837]/10 flex items-center justify-center shrink-0">
+                    <Phone size={14} className="text-[#006837]" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-400 font-medium">Phone (India)</p>
+                    <a href="tel:+917738758226" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837] block">+91 77387 58226</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -147,7 +162,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-medium">Email</p>
-                    <a href="mailto:sales@tvamsoftware.com" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837]">sales@tvamsoftware.com</a>
+                    <a href="mailto:info@tvamkeysoftware.com" className="text-sm font-semibold text-[#0F172A] hover:text-[#006837]">info@tvamkeysoftware.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -173,7 +188,7 @@ export default function ContactPage() {
 
             {/* Corporate HQ Office */}
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-              <h3 className="text-lg font-bold text-[#0F172A] mb-4">Our Office</h3>
+              <h3 className="text-lg font-bold text-[#0F172A] mb-4">Our Offices</h3>
               <div className="space-y-4">
                 {OFFICES.map((o) => (
                   <div key={o.city} className="flex items-start gap-3">

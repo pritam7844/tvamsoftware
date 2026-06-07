@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import Section from '@/components/layout/Section';
@@ -17,7 +18,7 @@ const INDUSTRIES = [
     desc: 'Telemedicine platforms, EMR systems, patient management apps, doctor-on-demand, mental health, and hospital management solutions.',
     apps: ['Doctor Appointment', 'Telemedicine', 'EMR Software', 'Mental Health App', 'Medical Delivery'],
     href: '/industries/healthcare',
-    color: 'from-red-500 to-pink-500',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🛒',
@@ -25,7 +26,7 @@ const INDUSTRIES = [
     desc: 'B2C stores, B2B portals, multi-vendor marketplaces, headless commerce, and mobile shopping experiences.',
     apps: ['Marketplace App', 'B2B Portal', 'Fashion Store', 'Grocery Delivery', 'Wholesale Platform'],
     href: '/industries/ecommerce',
-    color: 'from-orange-500 to-amber-500',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '📚',
@@ -33,7 +34,7 @@ const INDUSTRIES = [
     desc: 'LMS platforms, virtual classrooms, EdTech mobile apps, video learning, and gamified education systems.',
     apps: ['LMS Platform', 'Virtual Classroom', 'Tutor Booking', 'Yoga App', 'Education App'],
     href: '/industries/elearning',
-    color: 'from-blue-500 to-indigo-500',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '💳',
@@ -41,7 +42,7 @@ const INDUSTRIES = [
     desc: 'Digital banking, payment gateways, investment platforms, trading apps, eWallets, and insurance tech.',
     apps: ['eWallet App', 'Trading Platform', 'Insurance App', 'Payment Gateway', 'Banking App'],
     href: '/industries/fintech',
-    color: 'from-green-500 to-emerald-500',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🍕',
@@ -49,7 +50,7 @@ const INDUSTRIES = [
     desc: 'Food delivery platforms, restaurant management, cloud kitchen, grocery delivery, and meal planning apps.',
     apps: ['Food Delivery', 'Restaurant App', 'Cloud Kitchen', 'Grocery App', 'Milk Delivery'],
     href: '/industries/food',
-    color: 'from-yellow-500 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '✈️',
@@ -57,7 +58,7 @@ const INDUSTRIES = [
     desc: 'Booking engines, hotel management, OTA platforms, travel planning, and fleet management solutions.',
     apps: ['Hotel Booking', 'Flight Booking', 'Travel Planner', 'Car Rental', 'Tour Guide App'],
     href: '/industries/travel',
-    color: 'from-sky-500 to-blue-600',
+    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '⚽',
@@ -65,7 +66,7 @@ const INDUSTRIES = [
     desc: 'Fantasy sports platforms, live score apps, fan engagement, fitness tracking, and sports betting solutions.',
     apps: ['Fantasy Sports', 'Live Scores', 'Fitness Tracker', 'Sports Betting', 'Gym Management'],
     href: '/industries/sports',
-    color: 'from-lime-500 to-green-600',
+    image: 'https://images.unsplash.com/photo-1540747913346-19212a4b423b?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🎬',
@@ -73,7 +74,7 @@ const INDUSTRIES = [
     desc: 'OTT streaming platforms, music apps, gaming, social content creation, and live streaming solutions.',
     apps: ['Video Streaming', 'Music App', 'Podcast App', 'Live Streaming', 'Gaming Platform'],
     href: '/industries/entertainment',
-    color: 'from-purple-500 to-violet-600',
+    image: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🛵',
@@ -81,7 +82,7 @@ const INDUSTRIES = [
     desc: 'Uber-like platforms, home services, courier delivery, handyman, and multi-service on-demand solutions.',
     apps: ['Home Services', 'Courier Delivery', 'Car Wash', 'Laundry App', 'Handyman App'],
     href: '/industries/on-demand',
-    color: 'from-teal-500 to-cyan-600',
+    image: 'https://images.unsplash.com/photo-1601972599720-36938d4ecd31?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🤝',
@@ -89,7 +90,7 @@ const INDUSTRIES = [
     desc: 'Social platforms, dating apps, community forums, messaging apps, and influencer platforms.',
     apps: ['Dating App', 'Community App', 'Messaging App', 'Influencer Platform', 'Matrimonial App'],
     href: '/industries/social',
-    color: 'from-pink-500 to-rose-600',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🛴',
@@ -97,7 +98,7 @@ const INDUSTRIES = [
     desc: 'Electric vehicle fleet management, ride-sharing, IoT integration, and EV charging station apps.',
     apps: ['EV Fleet App', 'Scooter Sharing', 'EV Charging', 'Bike Rental', 'Fleet Management'],
     href: '/industries/escooter',
-    color: 'from-cyan-500 to-teal-600',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&h=200&q=80',
   },
   {
     icon: '🚁',
@@ -105,7 +106,7 @@ const INDUSTRIES = [
     desc: 'Drone delivery systems, agricultural drone apps, UAV control dashboards, and surveillance platforms.',
     apps: ['Drone Delivery', 'AgTech Drone', 'UAV Control', 'Aerial Survey', 'Security Drone'],
     href: '/industries/drone',
-    color: 'from-slate-500 to-gray-700',
+    image: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&h=200&q=80',
   },
 ];
 
@@ -132,9 +133,12 @@ export default function IndustriesPage() {
           {INDUSTRIES.map((ind) => (
             <Link key={ind.title} href={ind.href}
               className="group bg-white rounded-2xl overflow-hidden border border-slate-200 card-hover">
-              <div className={`h-24 bg-gradient-to-br ${ind.color} flex items-center px-6 gap-4`}>
-                <span className="text-4xl">{ind.icon}</span>
-                <h3 className="text-xl font-extrabold text-white">{ind.title}</h3>
+              <div className="relative h-24 overflow-hidden">
+                <Image src={ind.image} alt={ind.title} fill className="object-cover" />
+                <div className="absolute inset-0 bg-black/45 flex items-center px-6 gap-4">
+                  <span className="text-4xl">{ind.icon}</span>
+                  <h3 className="text-xl font-extrabold text-white">{ind.title}</h3>
+                </div>
               </div>
               <div className="p-6">
                 <p className="text-sm text-slate-600 leading-relaxed mb-4">{ind.desc}</p>

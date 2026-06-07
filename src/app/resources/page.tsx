@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import Section from '@/components/layout/Section';
 import Badge from '@/components/ui/Badge';
@@ -17,7 +18,7 @@ const FEATURED = [
     desc: 'A comprehensive breakdown of mobile app development costs across iOS, Android, and cross-platform — with real project examples.',
     readTime: '12 min read',
     date: 'May 2026',
-    color: 'from-blue-500 to-cyan-400',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&h=280&q=80',
     href: '/resources/app-development-cost-2026',
   },
   {
@@ -26,7 +27,7 @@ const FEATURED = [
     desc: 'How to build an AI-powered scheduling system for hospitals, clinics and healthcare providers from scratch.',
     readTime: '15 min read',
     date: 'April 2026',
-    color: 'from-purple-500 to-pink-400',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&h=280&q=80',
     href: '/resources/ai-healthcare-scheduling',
   },
   {
@@ -35,7 +36,7 @@ const FEATURED = [
     desc: 'Which cross-platform framework should you choose for your next mobile project? We compare performance, ecosystem and developer experience.',
     readTime: '10 min read',
     date: 'May 2026',
-    color: 'from-teal-500 to-green-400',
+    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&h=280&q=80',
     href: '/resources/flutter-vs-react-native',
   },
 ];
@@ -82,8 +83,11 @@ export default function ResourcesPage() {
           {FEATURED.map((f) => (
             <Link key={f.title} href={f.href}
               className="group rounded-2xl overflow-hidden border border-slate-200 bg-white card-hover">
-              <div className={`h-36 bg-gradient-to-br ${f.color} flex items-end p-5`}>
-                <span className="px-3 py-1 text-xs font-bold bg-white/20 text-white rounded-full">{f.tag}</span>
+              <div className="relative h-36 overflow-hidden">
+                <Image src={f.image} alt={f.title} fill className="object-cover" />
+                <div className="absolute inset-0 bg-black/30 flex items-end p-5">
+                  <span className="px-3 py-1 text-xs font-bold bg-white/20 text-white rounded-full backdrop-blur-sm">{f.tag}</span>
+                </div>
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#0F172A] text-sm leading-snug mb-2 group-hover:text-[#006837] transition-colors">

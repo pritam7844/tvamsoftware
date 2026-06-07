@@ -65,7 +65,7 @@ export default function ProcessSection() {
                     style={{ backgroundColor: step.color }}>
                     <step.icon size={28} className="text-white" strokeWidth={1.5} />
                   </div>
-                  <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#0F172A] text-white text-[10px] font-black flex items-center justify-center border-2 border-white">
+                  <span className="absolute -top-2 -right-2 z-20 w-6 h-6 rounded-full bg-[#0F172A] text-white text-[10px] font-black flex items-center justify-center border-2 border-white">
                     {i + 1}
                   </span>
                 </div>
