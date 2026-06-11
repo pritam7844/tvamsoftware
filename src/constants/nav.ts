@@ -41,13 +41,10 @@ export const NAV_LINKS = [
 ];
 
 export const CASE_STUDIES_NAV = [
-  { label: 'Josh Cam', sub: 'Google & Microsoft-backed', href: '/case-studies/josh-cam' },
-  { label: 'Lifology', sub: 'Guinness World Record Holder', href: '/case-studies/lifology' },
-  { label: 'MilkBun', sub: "World's 50 Best Restaurants", href: '/case-studies/milkbun' },
-  { label: 'Gyan Fresh', sub: 'The 908 Crore Milk Giant', href: '/case-studies/gyan-fresh' },
-  { label: 'Sterkla', sub: 'Entrepreneur X Award winner', href: '/case-studies/sterkla' },
-  { label: 'BuyEazzy', sub: '100% M-O-M Growth!', href: '/case-studies/buyeazzy' },
-  { label: "Byju's", sub: '$18 Billion Valuation', href: '/case-studies/byjus' },
-  { label: 'TrueFan', sub: 'AI-driven fan engagement App', href: '/case-studies/truefan' },
-  { label: "Nik Baker's", sub: 'Run by a Professional Baker', href: '/case-studies/nik-bakers' },
+  { label: 'Shrimbite', sub: 'Multi-branch Shrimp Farming & Operations', href: '/case-studies/shrimpbite' },
+  { label: 'Brandbarrel', sub: 'Premium Corporate Gifting Platform', href: '/case-studies/brandbarrel' },
+  { label: 'Travolo', sub: 'Secure Corporate Travel & Logistics', href: '/case-studies/travolo' },
+  { label: 'Incite Digital Portal', sub: 'Enterprise Project Tracking & Assets', href: '/case-studies/incite-digital' },
+  { label: "HONTO'S LANCOM", sub: 'LAN-Based Business & QC Operations', href: '/case-studies/hontos-lancom' },
+  { label: 'AMJ Dukandar', sub: 'Merchant Digital Ledger & Catalog', href: '/case-studies/amj-dukandar' },
 ];

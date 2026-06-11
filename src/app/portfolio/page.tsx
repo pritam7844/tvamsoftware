@@ -9,21 +9,15 @@ export const metadata: Metadata = {
   description: 'Explore Tvam Key Software\'s portfolio of enterprise software platforms, database architectures, and digital systems.',
 };
 
-const CATEGORIES = ['All', 'iOS', 'Android', 'Web', 'AI', 'Fintech', 'Healthcare', 'EdTech', 'On-Demand'];
+const CATEGORIES = ['All', 'iOS & Android', 'Android', 'Web', 'LAN', 'IoT', 'E-commerce'];
 
 const PORTFOLIO_ITEMS = [
-  { name: 'Josh Cam', cat: 'iOS', tag: 'Social Video', color: 'from-blue-500 to-cyan-400', desc: 'Enterprise video streaming platform scaled for high concurrency.' },
-  { name: 'Gyan Fresh', cat: 'Android', tag: 'Delivery', color: 'from-green-500 to-teal-400', desc: 'Subscription milk delivery platform with real-time route optimization.' },
-  { name: "Byju's", cat: 'EdTech', tag: 'Education', color: 'from-indigo-500 to-purple-400', desc: 'High-scale educational experience built to support massive concurrent user bases.' },
-  { name: 'BuyEazzy', cat: 'iOS', tag: 'Ecommerce', color: 'from-teal-500 to-cyan-400', desc: 'Fashion marketplace integrated with robust security gateways.' },
-  { name: 'Sterkla', cat: 'Android', tag: 'Marketplace', color: 'from-emerald-500 to-teal-400', desc: 'Entrepreneur & investor networking platform with secure messaging systems.' },
-  { name: 'Lifology', cat: 'EdTech', tag: 'E-learning', color: 'from-purple-500 to-pink-400', desc: 'World record career guidance platform designed for high accessibility.' },
-  { name: 'TrueFan', cat: 'AI', tag: 'Entertainment', color: 'from-rose-500 to-pink-400', desc: 'Intelligent video synthesis platform built with performant server engines.' },
-  { name: 'Book My Jet', cat: 'iOS', tag: 'Travel', color: 'from-sky-500 to-blue-400', desc: 'Private jet booking platform with complex routing and real-time scheduling.' },
-  { name: "Nik Baker's", cat: 'Web', tag: 'Food', color: 'from-amber-500 to-yellow-400', desc: 'Premium bakery D2C commerce platform with optimized transaction flows.' },
-  { name: 'Winchat', cat: 'Android', tag: 'Social', color: 'from-violet-500 to-indigo-400', desc: 'Real-time team communication platform built for secure local workspaces.' },
-  { name: 'Gymnest', cat: 'Android', tag: 'Fitness', color: 'from-lime-500 to-green-400', desc: 'Gym management and fitness tracking integrated with secure payment systems.' },
-  { name: 'Jeetle', cat: 'iOS', tag: 'Transport', color: 'from-slate-500 to-gray-400', desc: 'Multi-modal urban transport solution with live tracking and map integration.' },
+  { name: 'Shrimbite', cat: 'iOS & Android', tag: 'E-commerce & Operations', color: 'from-blue-500 to-cyan-400', desc: 'Multi-branch shrimp farming e-commerce and logistics platform scaling across regional branches.' },
+  { name: 'Brandbarrel', cat: 'Web', tag: 'Corporate Gifting', color: 'from-green-500 to-teal-400', desc: 'Premium corporate gifting platform featuring dedicated Employee, Company, and Admin dashboards.' },
+  { name: 'Travolo', cat: 'Web', tag: 'Travel & Security', color: 'from-indigo-500 to-purple-400', desc: 'Corporate travel booking and routing portal integrated with security solution systems.' },
+  { name: 'Incite Digital Portal', cat: 'Web', tag: 'Project Management', color: 'from-teal-500 to-cyan-400', desc: 'Enterprise project tracker and digital asset workspace designed for client collaborative reviews.' },
+  { name: "HONTO'S LANCOM", cat: 'LAN', tag: 'LAN & Shop-floor Operations', color: 'from-emerald-500 to-teal-400', desc: 'On-premise LAN business collaboration suite and factory shop-floor control panel integrated with live QC tracking.' },
+  { name: 'AMJ Dukandar', cat: 'Android', tag: 'Retail & Ledger', color: 'from-rose-500 to-pink-400', desc: 'Offline-first merchant ledger and product catalog builder for micro-retail businesses.' },
 ];
 
 export default function PortfolioPage() {

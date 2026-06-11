@@ -15,7 +15,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'healthcare',
     title: 'Healthcare',
-    icon: '🏥',
+    icon: 'Stethoscope',
     headline: 'Healthcare App Development',
     desc: 'Telemedicine platforms, EMR systems, patient management apps, doctor-on-demand, mental health, and hospital management solutions.',
     apps: ['Doctor Appointment', 'Telemedicine', 'EMR Software', 'Mental Health App', 'Medical Delivery', 'Hospital Management'],
@@ -32,7 +32,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'ecommerce',
     title: 'Ecommerce',
-    icon: '🛒',
+    icon: 'ShoppingCart',
     headline: 'Ecommerce App Development',
     desc: 'B2C stores, B2B portals, multi-vendor marketplaces, headless commerce, and mobile shopping experiences.',
     apps: ['Marketplace App', 'B2B Portal', 'Fashion Store', 'Grocery Delivery', 'Wholesale Platform', 'Subscription Commerce'],
@@ -49,7 +49,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'elearning',
     title: 'E-learning',
-    icon: '📚',
+    icon: 'BookOpen',
     headline: 'E-learning App Development',
     desc: 'LMS platforms, virtual classrooms, EdTech mobile apps, video learning, and gamified education systems.',
     apps: ['LMS Platform', 'Virtual Classroom', 'Tutor Booking', 'Yoga App', 'Education App', 'Gamified Learning'],
@@ -66,7 +66,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'fintech',
     title: 'Fintech',
-    icon: '💳',
+    icon: 'CreditCard',
     headline: 'Fintech App Development',
     desc: 'Digital banking, payment gateways, investment platforms, trading apps, eWallets, and insurance tech.',
     apps: ['eWallet App', 'Trading Platform', 'Insurance App', 'Payment Gateway', 'Banking App', 'Crypto Exchange'],
@@ -83,7 +83,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'food',
     title: 'Food Industry',
-    icon: '🍕',
+    icon: 'Utensils',
     headline: 'Food & Delivery App Development',
     desc: 'Food delivery platforms, restaurant management, cloud kitchen, grocery delivery, and meal planning apps.',
     apps: ['Food Delivery', 'Restaurant App', 'Cloud Kitchen', 'Grocery App', 'Milk Delivery', 'Meal Planning'],
@@ -100,7 +100,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'travel',
     title: 'Travel & Tourism',
-    icon: '✈️',
+    icon: 'Plane',
     headline: 'Travel App Development',
     desc: 'Booking engines, hotel management, OTA platforms, travel planning, and fleet management solutions.',
     apps: ['Hotel Booking', 'Flight Booking', 'Travel Planner', 'Car Rental', 'Tour Guide App', 'OTA Platform'],
@@ -117,7 +117,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'sports',
     title: 'Sports',
-    icon: '⚽',
+    icon: 'Trophy',
     headline: 'Sports App Development',
     desc: 'Fantasy sports platforms, live score apps, fan engagement, fitness tracking, and sports betting solutions.',
     apps: ['Fantasy Sports', 'Live Scores', 'Fitness Tracker', 'Sports Betting', 'Gym Management', 'Coach Platform'],
@@ -134,7 +134,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'entertainment',
     title: 'Entertainment',
-    icon: '🎬',
+    icon: 'Clapperboard',
     headline: 'Entertainment App Development',
     desc: 'OTT streaming platforms, music apps, gaming, social content creation, and live streaming solutions.',
     apps: ['Video Streaming', 'Music App', 'Podcast App', 'Live Streaming', 'Gaming Platform', 'Social Content'],
@@ -151,7 +151,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'on-demand',
     title: 'On-Demand Services',
-    icon: '🛵',
+    icon: 'Truck',
     headline: 'On-Demand App Development',
     desc: 'Uber-like platforms, home services, courier delivery, handyman, and multi-service on-demand solutions.',
     apps: ['Home Services', 'Courier Delivery', 'Car Wash', 'Laundry App', 'Handyman App', 'Beauty Services'],
@@ -168,7 +168,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'social',
     title: 'Social Networking',
-    icon: '🤝',
+    icon: 'Users',
     headline: 'Social Networking App Development',
     desc: 'Social platforms, dating apps, community forums, messaging apps, and influencer platforms.',
     apps: ['Dating App', 'Community App', 'Messaging App', 'Influencer Platform', 'Matrimonial App', 'Professional Network'],
@@ -185,7 +185,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'escooter',
     title: 'E-Scooter',
-    icon: '🛴',
+    icon: 'Zap',
     headline: 'E-Scooter & EV App Development',
     desc: 'Electric vehicle fleet management, ride-sharing, IoT integration, and EV charging station apps.',
     apps: ['EV Fleet App', 'Scooter Sharing', 'EV Charging', 'Bike Rental', 'Fleet Management', 'IoT Dashboard'],
@@ -202,7 +202,7 @@ const INDUSTRIES: IndustryData[] = [
   {
     slug: 'drone',
     title: 'Drone Technology',
-    icon: '🚁',
+    icon: 'Cpu',
     headline: 'Drone App Development',
     desc: 'Drone delivery systems, agricultural drone apps, UAV control dashboards, and surveillance platforms.',
     apps: ['Drone Delivery', 'AgTech Drone', 'UAV Control', 'Aerial Survey', 'Security Drone', 'Flight Planning'],

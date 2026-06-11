@@ -7,6 +7,7 @@ import Section from '@/components/layout/Section';
 import Badge from '@/components/ui/Badge';
 import CtaSection from '@/components/sections/CtaSection';
 import INDUSTRIES, { getIndustryBySlug } from '@/data/industries';
+import IndustryIcon from '@/components/ui/IndustryIcon';
 
 export async function generateStaticParams() {
   return INDUSTRIES.map((i) => ({ slug: i.slug }));
@@ -39,7 +40,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
               {industry.title}
             </Badge>
             <div className="flex items-center gap-4 mb-4">
-              <span className="text-5xl">{industry.icon}</span>
+              <IndustryIcon name={industry.icon} className="w-12 h-12 text-[#EAA812]" />
               <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
                 {industry.headline}
               </h1>
