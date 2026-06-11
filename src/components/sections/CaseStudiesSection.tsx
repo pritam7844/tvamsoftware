@@ -3,7 +3,7 @@ import { ArrowRight, TrendingUp } from 'lucide-react';
 
 const CASES = [
   {
-    name: 'Shrimbite',
+    name: 'Shrimpbite',
     tag: 'E-commerce · Operations',
     stat: '3',
     statLabel: 'Regional Branches',
@@ -48,7 +48,7 @@ const CASES = [
     href: '/case-studies/incite-digital',
   },
   {
-    name: 'AMJ Dukandar',
+    name: 'AMJSTAR',
     tag: 'Retail · Ledger',
     stat: 'Offline',
     statLabel: 'First Sync',

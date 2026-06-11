@@ -41,10 +41,10 @@ export const NAV_LINKS = [
 ];
 
 export const CASE_STUDIES_NAV = [
-  { label: 'Shrimbite', sub: 'Multi-branch Shrimp Farming & Operations', href: '/case-studies/shrimpbite' },
+  { label: 'Shrimpbite', sub: 'Multi-branch Shrimp Farming & Operations', href: '/case-studies/shrimpbite' },
   { label: 'Brandbarrel', sub: 'Premium Corporate Gifting Platform', href: '/case-studies/brandbarrel' },
   { label: 'Travolo', sub: 'Secure Corporate Travel & Logistics', href: '/case-studies/travolo' },
   { label: 'Incite Digital Portal', sub: 'Enterprise Project Tracking & Assets', href: '/case-studies/incite-digital' },
   { label: "HONTO'S LANCOM", sub: 'LAN-Based Business & QC Operations', href: '/case-studies/hontos-lancom' },
-  { label: 'AMJ Dukandar', sub: 'Merchant Digital Ledger & Catalog', href: '/case-studies/amj-dukandar' },
+  { label: 'AMJSTAR', sub: 'Merchant Digital Ledger & Catalog', href: '/case-studies/amj-dukandar' },
 ];

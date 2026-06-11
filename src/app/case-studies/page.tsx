@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 const CASE_STUDIES = [
   {
-    name: 'Shrimbite',
+    name: 'Shrimpbite',
     category: 'E-commerce · Operations',
     headline: 'Optimizing Shrimp Farming & Logistics at Scale',
-    story: 'Shrimbite partnered with Tvam Software to digitize shrimp farming operations and supply chains across multiple regional branches including Teerth Avila, Yamuna Nagar, and Pragati Residency. We built a full-stack, cloud-hosted platform enabling secure transaction workflows, role-based branch audits, and a unified administrator control system.',
+    story: 'Shrimpbite partnered with Tvam Software to digitize shrimp farming operations and supply chains across multiple regional branches including Teerth Avila, Yamuna Nagar, and Pragati Residency. We built a full-stack, cloud-hosted platform enabling secure transaction workflows, role-based branch audits, and a unified administrator control system.',
     results: [
       { metric: '3', label: 'Branches' },
       { metric: '100%', label: 'Order Security' },
@@ -82,10 +82,10 @@ const CASE_STUDIES = [
     href: '/case-studies/hontos-lancom',
   },
   {
-    name: 'AMJ Dukandar',
+    name: 'AMJSTAR',
     category: 'Merchant Ledger · Retail',
     headline: 'Offline-First Store Management and Catalog Builder',
-    story: 'AMJ Dukandar simplifies digital record-keeping for local retail merchants. Tvam Software engineered a lightweight, high-performance offline ledger application that handles transaction ledgers, product cataloging, and auto-sends payment reminders.',
+    story: 'AMJSTAR simplifies digital record-keeping for local retail merchants. Tvam Software engineered a lightweight, high-performance offline ledger application that handles transaction ledgers, product cataloging, and auto-sends payment reminders.',
     results: [
       { metric: 'Offline', label: 'Operations' },
       { metric: 'Auto', label: 'Reminders' },

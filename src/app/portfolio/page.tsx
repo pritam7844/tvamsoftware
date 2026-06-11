@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 const CATEGORIES = ['All', 'iOS & Android', 'Android', 'Web', 'LAN', 'IoT', 'E-commerce'];
 
 const PORTFOLIO_ITEMS = [
-  { name: 'Shrimbite', cat: 'iOS & Android', tag: 'E-commerce & Operations', color: 'from-blue-500 to-cyan-400', desc: 'Multi-branch shrimp farming e-commerce and logistics platform scaling across regional branches.' },
+  { name: 'Shrimpbite', cat: 'iOS & Android', tag: 'E-commerce & Operations', color: 'from-blue-500 to-cyan-400', desc: 'Multi-branch shrimp farming e-commerce and logistics platform scaling across regional branches.' },
   { name: 'Brandbarrel', cat: 'Web', tag: 'Corporate Gifting', color: 'from-green-500 to-teal-400', desc: 'Premium corporate gifting platform featuring dedicated Employee, Company, and Admin dashboards.' },
   { name: 'Travolo', cat: 'Web', tag: 'Travel & Security', color: 'from-indigo-500 to-purple-400', desc: 'Corporate travel booking and routing portal integrated with security solution systems.' },
   { name: 'Incite Digital Portal', cat: 'Web', tag: 'Project Management', color: 'from-teal-500 to-cyan-400', desc: 'Enterprise project tracker and digital asset workspace designed for client collaborative reviews.' },
   { name: "HONTO'S LANCOM", cat: 'LAN', tag: 'LAN & Shop-floor Operations', color: 'from-emerald-500 to-teal-400', desc: 'On-premise LAN business collaboration suite and factory shop-floor control panel integrated with live QC tracking.' },
-  { name: 'AMJ Dukandar', cat: 'Android', tag: 'Retail & Ledger', color: 'from-rose-500 to-pink-400', desc: 'Offline-first merchant ledger and product catalog builder for micro-retail businesses.' },
+  { name: 'AMJSTAR', cat: 'Android', tag: 'Retail & Ledger', color: 'from-rose-500 to-pink-400', desc: 'Offline-first merchant ledger and product catalog builder for micro-retail businesses.' },
 ];
 
 export default function PortfolioPage() {

@@ -179,7 +179,7 @@ const INDUSTRIES: IndustryData[] = [
       { title: 'Content Moderation', desc: 'AI-powered moderation tools and community reporting systems.' },
     ],
     stats: [{ label: 'Apps Delivered', value: '165+' }, { label: 'Users Served', value: '50M+' }, { label: 'Messages/Day', value: '100M+' }],
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&h=400&q=80',
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&h=400&q=80',
     color: 'from-pink-500 to-rose-600',
   },
   {

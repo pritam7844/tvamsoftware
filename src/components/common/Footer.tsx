@@ -35,6 +35,7 @@ const FOOTER_LINKS = {
     { label: 'Case Studies', href: '/case-studies' },
     { label: 'Contact Us', href: '/contact' },
     { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms & Conditions', href: '/terms' },
     { label: 'Sitemap', href: '/sitemap' },
   ],
   Services: [

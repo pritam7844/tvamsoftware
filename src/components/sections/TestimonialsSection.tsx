@@ -84,29 +84,29 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
-        {/* Testimonial grid — mixed sizes */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        {/* Testimonial grid — equal-height rows */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {TESTIMONIALS.map((t, i) => (
             <div key={t.name}
-              className={`break-inside-avoid rounded-2xl border p-6 ${i === 0 || i === 4 ? 'bg-[#0A0E1A] border-white/10' : 'bg-[#F8FAFC] border-slate-200'}`}>
+              className={`flex flex-col h-full rounded-2xl border p-6 ${i === 0 || i === 5 ? 'bg-[#0A0E1A] border-white/10' : 'bg-[#F8FAFC] border-slate-200'}`}>
               <div className="flex items-start justify-between mb-4">
-                <Quote size={20} className={i === 0 || i === 4 ? 'text-[#EAA812]/60' : 'text-slate-300'} />
+                <Quote size={20} className={i === 0 || i === 5 ? 'text-[#EAA812]/60' : 'text-slate-300'} />
                 <div className="flex items-center gap-2">
                   <StarRow count={t.rating} />
-                  <span className={`text-[10px] font-semibold uppercase tracking-wider ${i === 0 || i === 4 ? 'text-slate-500' : 'text-slate-400'}`}>
+                  <span className={`text-[10px] font-semibold uppercase tracking-wider ${i === 0 || i === 5 ? 'text-slate-500' : 'text-slate-400'}`}>
                     {t.platform}
                   </span>
                 </div>
               </div>
-              <p className={`text-sm leading-relaxed ${i === 0 || i === 4 ? 'text-slate-300' : 'text-slate-700'}`}>
+              <p className={`text-sm leading-relaxed ${i === 0 || i === 5 ? 'text-slate-300' : 'text-slate-700'}`}>
                 &ldquo;{t.text}&rdquo;
               </p>
-              <div className="mt-5 flex items-center gap-3">
+              <div className="mt-auto pt-5 flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#006837] to-[#006837] flex items-center justify-center text-white font-bold text-xs shrink-0">
                   {t.name[0]}
                 </div>
                 <div>
-                  <p className={`text-sm font-bold leading-none ${i === 0 || i === 4 ? 'text-white' : 'text-[#0F172A]'}`}>{t.name}</p>
+                  <p className={`text-sm font-bold leading-none ${i === 0 || i === 5 ? 'text-white' : 'text-[#0F172A]'}`}>{t.name}</p>
                   <p className="text-xs text-slate-400 mt-0.5">{t.role}</p>
                 </div>
               </div>

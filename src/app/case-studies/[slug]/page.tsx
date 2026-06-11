@@ -9,7 +9,7 @@ import CtaSection from '@/components/sections/CtaSection';
 const CASE_STUDIES = [
   {
     slug: 'shrimpbite',
-    title: 'Shrimbite',
+    title: 'Shrimpbite',
     sub: 'Multi-branch Shrimp Farming Platform',
     category: 'E-commerce & Operations',
     desc: 'Multi-branch shrimp farming e-commerce and logistics platform scaling across regional branches with high-efficiency supply chain tracking.',
@@ -69,7 +69,7 @@ const CASE_STUDIES = [
   },
   {
     slug: 'amj-dukandar',
-    title: 'AMJ Dukandar',
+    title: 'AMJSTAR',
     sub: 'Merchant Digital Ledger & Catalog',
     category: 'Merchant Platform',
     desc: 'Offline-first merchant ledger and catalog builder for small businesses and retail shopkeepers.',

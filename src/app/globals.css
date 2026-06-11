@@ -39,12 +39,18 @@
 }
 
 /* ── Reset ── */
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { -webkit-font-smoothing: antialiased; }
-img, video { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
+/* Placed in the base layer so Tailwind utility classes (e.g. hover:text-white)
+   override these element defaults instead of being beaten by unlayered CSS. */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; }
+  img, video { max-width: 100%; display: block; }
+  /* NOTE: do not set `color: inherit` here. Tailwind preflight already does that
+     inside @layer base; redefining it unlayered would beat hover:text-* utilities. */
+  a { text-decoration: none; }
+  button { cursor: pointer; border: none; background: none; font-family: inherit; }
+}
 
 /* ── Fluid type ── */
 :root {

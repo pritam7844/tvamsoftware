@@ -7,6 +7,7 @@ import Footer from '@/components/common/Footer';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.tvamkeysoftware.com'),
   title: 'Tvam Key Software — Enterprise Digital Engineering & Software Systems',
   description:
     'Tvam Key Software engineers robust digital platforms, scalable cloud architectures, and intelligent software systems from our headquarters in Mumbai BKC.',
