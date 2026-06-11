@@ -14,14 +14,30 @@ const OFFICES = [
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', company: '', service: '', message: '' });
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setSent(true);
+    setSending(true);
+    setError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('request failed');
+      setSent(true);
+    } catch {
+      setError('Something went wrong. Please try again or email us directly at info@tvamkeysoftware.com.');
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -125,9 +141,12 @@ export default function ContactPage() {
                     rows={5}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#006837] focus:ring-2 focus:ring-[#006837]/20 transition-all resize-none" />
                 </div>
-                <button type="submit"
-                  className="w-full py-4 bg-[#006837] hover:bg-[#004D28] text-white font-bold rounded-full flex items-center justify-center gap-2 transition-colors disabled:opacity-60">
-                  Send Message →
+                {error && (
+                  <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">{error}</p>
+                )}
+                <button type="submit" disabled={sending}
+                  className="w-full py-4 bg-[#006837] hover:bg-[#004D28] text-white font-bold rounded-full flex items-center justify-center gap-2 transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
+                  {sending ? 'Sending…' : 'Send Message →'}
                 </button>
               </form>
             )}
